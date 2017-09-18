@@ -1,0 +1,74 @@
+{
+  entities {
+    users {
+      1: {
+        id: 1,
+        username: 'buk_wurm45',
+        books: [25, 3, 102],
+        bookshelves: [6, 19, 24]
+      },
+      2: {
+        id: 2,
+        username: 'cant_even_read',
+        books: [98, 765, 4],
+        bookshelves: [6, 15, 91]
+      }
+    },
+    bookshelves {
+      1: {
+        id: 1,
+        owner_id: 2,
+        title: 'want_to_read',
+        books: '[2, 13, 65]'
+      },
+      2: {
+        id: 2,
+        owner_id: 1,
+        title: 'scifi_classics',
+        books: '[34, 12, 277]'
+      }
+    },
+    books {
+      1: {
+        id: 1,
+        title: 'Spin',
+        author: 'Robert Charles Wilson',
+        year: 2005,
+        description: 'Hugo award winner'
+      },
+      2: {
+        id: 2,
+        title: 'The Three Body Problem',
+        author: 'Liu Cixin',
+        year: '2014',
+        description: 'Also a Hugo award winner'
+      }
+    },
+    reviews {
+      1: {
+        id: 1,
+        reviewer_id: 2,
+        book_id: 12,
+        rating: 4,
+        title: 'Good Book!',
+        Body: 'Hey this is a good book'
+      },
+      2: {
+        id: 2,
+        reviewer_id: 99,
+        book_id: 6,
+        rating: 2,
+        title: 'Bad Book!',
+        Body: 'Hey this is a bad book'
+      }
+    }
+  },
+  ui: {
+    loading: true/false
+  },
+  session: {
+    currentUser: {
+      id: 1
+    }
+  }
+}
