@@ -1,0 +1,26 @@
+export const login = user => (
+  $.ajax({
+    method: 'POST',
+    url: '/api/session',
+    data: {user}
+  })
+);
+
+export const signup = user => (
+  $.ajax({
+    method: 'POST',
+    url: '/api/users',
+    data: {user}
+  })
+);
+
+export const logout = user => (
+  $.ajax({
+    method: 'DELETE',
+    url: '/api/session'
+  })
+);
+
+window.signup = signup;
+window.logout = logout;
+window.login = login;
