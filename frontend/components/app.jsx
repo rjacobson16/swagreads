@@ -17,7 +17,7 @@ const App = () => (
       <h1>Swagreads</h1>
     </header>
       <Switch>
-       <AuthRoute path="/" component={SessionPageContainer} />
+       <AuthRoute exact path="/" component={SessionPageContainer} />
        <ProtectedRoute path="/me" component={HomePageContainer} />
      </Switch>
   </div>

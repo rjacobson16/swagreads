@@ -20,9 +20,7 @@ class SessionPage extends React.Component {
 
   loginExistingUser(e) {
       e.preventDefault();
-      console.log(this.state);
       const user = this.state.login;
-      console.log(this.state);
       this.props.login(user);
    }
 
