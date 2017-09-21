@@ -34,50 +34,52 @@ class SessionPage extends React.Component {
 
   render () {
     return (
-      <div>
-        <h2>This is the Session Page</h2>
-
+      <div className='session-page-container'>
         <div className='login-form-container'>
+          <h1><i>Swag</i>reads</h1>
           <form onSubmit={this.loginExistingUser} className="login-form-box">
-            Existing User:
-            <br/>
-            <label>Username:
-              <input type="text"
+
+            <input type="text"
+                placeholder='Username'
                 value={this.state.username}
                 onChange={this.update("login", 'username')}
                 className="login-input" />
-            </label>
+
             <br/>
-              <label>Password:
+
                 <input type="password"
+                  placeholder='Password'
                   value={this.state.password}
                   onChange={this.update('login', 'password')}
                   className="login-input" />
-              </label>
-              <input type="submit" value="Submit" />
+
+              <input type="submit" value="Sign In" />
           </form>
+
         </div>
 
         <br/>
 
           <div className='signup-form-container'>
             <form onSubmit={this.createNewUser} className="signup-form-box">
-              New User:
               <br/>
-              <label>Username:
+
                 <input type="text"
+                  placeholder='Username'
                   value={this.state.username}
                   onChange={this.update('signup', 'username')}
                   className="signup-input" />
-              </label>
+
               <br/>
-                <label>Password:
+
                   <input type="password"
+                    placeholder='Password'
                     value={this.state.password}
                     onChange={this.update('signup', 'password')}
                     className="signup-input" />
-                </label>
-                <input type="submit" value="Submit" />
+
+                <br/>
+                <input type="submit" value="Sign Up" />
             </form>
           </div>
       </div>

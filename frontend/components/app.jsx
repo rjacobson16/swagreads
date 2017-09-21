@@ -14,7 +14,6 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 const App = () => (
   <div>
     <header>
-      <h1>Swagreads</h1>
     </header>
       <Switch>
        <AuthRoute exact path="/" component={SessionPageContainer} />
