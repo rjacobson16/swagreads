@@ -11,6 +11,7 @@ class SessionPage extends React.Component {
 
     this.loginExistingUser = this.loginExistingUser.bind(this);
     this.createNewUser = this.createNewUser.bind(this);
+
   }
 
   update(key, field) {
@@ -54,7 +55,7 @@ class SessionPage extends React.Component {
         <div className='login-form-container'>
          <h1><span className='Sparkle'>swag</span><b>reads</b></h1>
           <form onSubmit={this.loginExistingUser} className="login-form-box">
-            <div>{this.renderErrors()}</div>
+            <div className='error'>{this.renderErrors()}</div>
 
             <input type="text"
                 placeholder='Username'
