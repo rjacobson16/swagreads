@@ -1,8 +1,25 @@
 import React from 'react';
+import {
+  Route,
+  Redirect,
+  Switch,
+  Link,
+  HashRouter
+} from 'react-router-dom';
+
+import HomePageContainer from './home_page_container';
+import SessionPageContainer from './session_page_container';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
   <div>
-    <h1>Bench BnB</h1>
+    <header>
+      <h1>Swagreads</h1>
+    </header>
+      <Switch>
+       <AuthRoute path="/" component={SessionPageContainer} />
+       <ProtectedRoute path="/me" component={HomePageContainer} />
+     </Switch>
   </div>
 );
 
