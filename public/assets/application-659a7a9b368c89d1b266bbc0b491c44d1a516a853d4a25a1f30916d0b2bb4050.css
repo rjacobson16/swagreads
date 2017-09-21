@@ -1,0 +1,123 @@
+/* line 1, /Users/rjacobson/Desktop/Swagreads/Swagreads/app/assets/stylesheets/custom.scss */
+body {
+  background-image: url("https://lostandtaken.com/wp-content/uploads/edd/2016/02/20th-century-brown-vintage-paper-8-780x1085.jpg");
+}
+
+/* line 4, /Users/rjacobson/Desktop/Swagreads/Swagreads/app/assets/stylesheets/custom.scss */
+.login-form-container {
+  font-family: Veranda;
+  color: #4d0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+/* line 24, /Users/rjacobson/Desktop/Swagreads/Swagreads/app/assets/stylesheets/custom.scss */
+.login-form-box {
+  margin-right: 10%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+/* line 32, /Users/rjacobson/Desktop/Swagreads/Swagreads/app/assets/stylesheets/custom.scss */
+.signup-form-container {
+  position: absolute;
+  top: 100px;
+  background-color: gray;
+  background-size: cover;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+/* line 51, /Users/rjacobson/Desktop/Swagreads/Swagreads/app/assets/stylesheets/custom.scss */
+.login-form-box input[type="password"] {
+  margin-left: 0.5%;
+  height: 20%;
+  font-size: 14pt;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 63, /Users/rjacobson/Desktop/Swagreads/Swagreads/app/assets/stylesheets/custom.scss */
+.login-form-box input[type="text"] {
+  height: 20%;
+  font-size: 14pt;
+}
+
+/* line 68, /Users/rjacobson/Desktop/Swagreads/Swagreads/app/assets/stylesheets/custom.scss */
+.signup-form-box input[type="password"] {
+  font-size: 14pt;
+  height: 3%;
+}
+
+/* line 76, /Users/rjacobson/Desktop/Swagreads/Swagreads/app/assets/stylesheets/custom.scss */
+.signup-form-box input[type="text"] {
+  height: 3%;
+  font-size: 14pt;
+}
+
+/* line 81, /Users/rjacobson/Desktop/Swagreads/Swagreads/app/assets/stylesheets/custom.scss */
+.login-form-box input[type="submit"] {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-right: 3%;
+}
+
+/* line 92, /Users/rjacobson/Desktop/Swagreads/Swagreads/app/assets/stylesheets/custom.scss */
+.signup-form-box {
+  margin-right: 13%;
+  margin-top: 1%;
+}
+
+/* line 96, /Users/rjacobson/Desktop/Swagreads/Swagreads/app/assets/stylesheets/custom.scss */
+.session-page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/* line 107, /Users/rjacobson/Desktop/Swagreads/Swagreads/app/assets/stylesheets/custom.scss */
+h1 {
+  margin-left: 15%;
+  font-size: 40px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
