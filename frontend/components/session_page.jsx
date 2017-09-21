@@ -36,8 +36,9 @@ class SessionPage extends React.Component {
       this.props.signup(user);
 
     }
+
    renderErrors() {
-     console.log('rendering errors');
+
      return(
        <ul>
          {this.props.errors.map((error, i) => (
@@ -50,6 +51,7 @@ class SessionPage extends React.Component {
     }
 
   render () {
+    console.log(this.props.errors);
     return (
       <div className='session-page-container'>
         <div className='login-form-container'>
