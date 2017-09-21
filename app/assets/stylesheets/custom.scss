@@ -25,7 +25,8 @@ body{
     margin-right: 10%;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: flex;
+    align-items: center; 
 
 }
 
@@ -33,7 +34,6 @@ body{
   position: absolute;
   top: 100px;
   background-image: image-url('books.jpg');
-
   background-size: cover;
 
   left: 0px;
@@ -49,7 +49,6 @@ body{
 }
 
 .login-form-box input[type="password"]{
-
 
   margin-left: 0.5%;
   height:20%;
@@ -71,6 +70,10 @@ body{
   height:3%;
 
 
+}
+
+ul {
+  list-style-type: none;
 }
 
 .signup-form-box input[type="text"]{

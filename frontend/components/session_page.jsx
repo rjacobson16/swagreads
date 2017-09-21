@@ -1,4 +1,7 @@
 import React from 'react';
+import ReactHint from 'react-hint';
+// import 'react-hint/css/index.css';
+
 
 class SessionPage extends React.Component {
 
@@ -22,6 +25,7 @@ class SessionPage extends React.Component {
       e.preventDefault();
       const user = this.state.login;
       this.props.login(user);
+      console.log(this.props.errors);
    }
 
    createNewUser(e) {
@@ -31,6 +35,18 @@ class SessionPage extends React.Component {
       this.props.signup(user);
 
     }
+   renderErrors() {
+     console.log('rendering errors');
+     return(
+       <ul>
+         {this.props.errors.map((error, i) => (
+           <li key={`error-${i}`}>
+             {error}
+           </li>
+         ))}
+       </ul>
+     );
+    }
 
   render () {
     return (
@@ -38,6 +54,7 @@ class SessionPage extends React.Component {
         <div className='login-form-container'>
           <h1><i>Swag</i>reads</h1>
           <form onSubmit={this.loginExistingUser} className="login-form-box">
+            <div>{this.renderErrors()}</div>
 
             <input type="text"
                 placeholder='Username'
@@ -53,7 +70,7 @@ class SessionPage extends React.Component {
                   onChange={this.update('login', 'password')}
                   className="login-input" />
 
-              <input type="submit" value="Sign In" />
+                <input type="submit" value="Sign In" />
           </form>
 
         </div>
