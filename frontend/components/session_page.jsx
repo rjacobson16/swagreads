@@ -52,7 +52,7 @@ class SessionPage extends React.Component {
     return (
       <div className='session-page-container'>
         <div className='login-form-container'>
-          <h1><i>Swag</i>reads</h1>
+         <h1><span className='Sparkle'>swag</span><b>reads</b></h1>
           <form onSubmit={this.loginExistingUser} className="login-form-box">
             <div>{this.renderErrors()}</div>
 
@@ -78,6 +78,7 @@ class SessionPage extends React.Component {
         <br/>
 
           <div className='signup-form-container'>
+            <div className='meet-book'> <h1>Meet your next favorite book.</h1> </div>
             <form onSubmit={this.createNewUser} className="signup-form-box">
               <br/>
 
