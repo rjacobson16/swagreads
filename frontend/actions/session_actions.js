@@ -5,7 +5,7 @@ export const RECEIVE_SESSION_ERRORS = 'RECEIVE_SESSION_ERRORS';
 
 export const login = user => dispatch => (
   ApiUtil.login(user).then(user => dispatch(receiveCurrentUser(user)),
-    (error) => dispatch(receiveSessionErrors(error.responseJSON)))
+  (error) => dispatch(receiveSessionErrors(error.responseJSON)))
 );
 
 export const signup = user => dispatch => (
