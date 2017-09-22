@@ -11,6 +11,7 @@ class SessionPage extends React.Component {
 
     this.loginExistingUser = this.loginExistingUser.bind(this);
     this.createNewUser = this.createNewUser.bind(this);
+    this.demo = this.demo.bind(this);
 
   }
 
@@ -21,6 +22,13 @@ class SessionPage extends React.Component {
         [otherField]: this.state[key][otherField]
       }});
     }
+
+  demo() {
+    return e => this.setState({'login': {
+      'username': 'guest',
+      'password': 'password'
+    }});
+  }
 
   loginExistingUser(e) {
       e.preventDefault();
@@ -65,7 +73,6 @@ class SessionPage extends React.Component {
                 onChange={this.update("login", 'username')}
                 className="login-input" />
 
-            <br/>
 
                 <input type="password"
                   placeholder='Password'
@@ -73,17 +80,17 @@ class SessionPage extends React.Component {
                   onChange={this.update('login', 'password')}
                   className="login-input" />
 
-                <input type="submit" value="Sign In" />
+                <button className="login-input">Sign In</button>
+                <button className="login-input" onClick={this.demo()}>DEMO!</button>
           </form>
 
         </div>
 
-        <br/>
+
 
           <div className='signup-form-container'>
-            <div className='meet-book'> <h1>Meet your next favorite book.</h1> </div>
             <form onSubmit={this.createNewUser} className="signup-form-box">
-              <br/>
+                <p className='meet-book'>Meet your next <br/> favorite book.</p>
 
                 <input type="text"
                   placeholder='Username'
@@ -91,7 +98,7 @@ class SessionPage extends React.Component {
                   onChange={this.update('signup', 'username')}
                   className="signup-input" />
 
-              <br/>
+
 
                   <input type="password"
                     placeholder='Password'
@@ -100,7 +107,7 @@ class SessionPage extends React.Component {
                     className="signup-input" />
 
                 <br/>
-                <input type="submit" value="Sign Up" />
+                <button>Sign Up</button>
             </form>
           </div>
       </div>

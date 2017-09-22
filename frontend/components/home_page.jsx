@@ -1,4 +1,5 @@
 import React from 'react';
+import BookIndexContainer from './book_index_container';
 
 class HomePage extends React.Component {
   constructor(props){
@@ -14,8 +15,9 @@ class HomePage extends React.Component {
   render () {
     return (
       <div>
-        <h2>This is the Home Page</h2>
+        <h1>This is the Home Page</h1>
         <button onClick={this.logoutUser}>logout</button>
+        <BookIndexContainer />
       </div>
     );
   }

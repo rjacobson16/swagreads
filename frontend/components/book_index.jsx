@@ -1,13 +1,15 @@
 import React from 'react';
+import BookIndexItem from './book_index_item';
 
 class BookIndex extends React.Component {
 
   componentDidMount() {
-    this.props.fetchBooks();
+    this.props.fetchAllBooks();
   }
   render () {
     return (
       <div>
+        <h2>Browse all books</h2>
         <ul>
           {
             this.props.books.map(book => (
@@ -22,3 +24,5 @@ class BookIndex extends React.Component {
   }
 
 }
+
+export default BookIndex;
