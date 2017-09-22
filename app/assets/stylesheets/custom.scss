@@ -35,7 +35,7 @@ button.login-input{
   border-radius: 5px;
   font-size: 12pt;
   background-color: white;
-  font-family:'Fira Sans', sans-serif;
+  font-family:  'Raleway', sans-serif;
 }
 
 .login-input{
@@ -102,7 +102,7 @@ ul {
   border-radius: 5px;
   font-size: 12pt;
   background-color: white;
-  font-family:'Fira Sans', sans-serif;
+  font-family:  'Raleway', sans-serif;
 
 
 
@@ -111,8 +111,9 @@ ul {
 .signup-form-box{
   display: flex;
   flex-direction: column;
-  // padding: 0px;
-  background-color: #5a3533;
+  border-style: solid;
+  border-color: white;
+  background-color: #673c3a;
   padding: 30px;
   height: 25vh;
   margin-top: 5em;
