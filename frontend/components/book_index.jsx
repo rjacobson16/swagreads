@@ -10,7 +10,7 @@ class BookIndex extends React.Component {
     return (
       <div>
         <h2>Browse all books</h2>
-        <ul>
+        <ul className='book-index'>
           {
             this.props.books.map(book => (
               <BookIndexItem

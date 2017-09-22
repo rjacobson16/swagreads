@@ -1,141 +1,19 @@
 // precompile assets
 body{
     margin: 0;
-    background-image: url('https://lostandtaken.com/wp-content/uploads/edd/2016/02/20th-century-brown-vintage-paper-8-780x1085.jpg');
-}
-.login-form-container {
-  padding: 30px;
-  height: 60px;
-  font-family:  'Raleway', sans-serif;
-  display: flex;
-  justify-content: space-between;
-
-
-
-}
-
-span.bold {
-  font-weight:500;
-}
-
-span.weak{
-  font-weight: 100;
-}
-
-
-.login-form-box{
-  display: flex;
-  align-items: center;
-
-
-}
-
-button.login-input{
-  padding: 4px 10px;
-  border-radius: 5px;
-  font-size: 12pt;
-  background-color: white;
-  font-family:  'Raleway', sans-serif;
-}
-
-.login-input{
-  margin-left: 8px;
-}
-
-.signup-form-container{
-
-
-  background-image: image-url('books.jpg');
-  background-size: cover;
-  height: calc(100vh - 120px);
-  display: flex;
-  justify-content: flex-end;
-
-}
-
-.meet-book{
-
-    color: #fff;
-    text-align: center;
-    font-family:'Fira Sans', sans-serif;
-    font-size: 16pt;
-    font-weight: 500;
-
-
-}
-
-.login-form-box input[type="password"]{
-
-
-  font-size:14pt;
-
-
-}
-
-.login-form-box input[type="text"]{
-
-  font-size:14pt;
-}
-
-.signup-form-box input[type="password"]{
-
-  font-size:14pt;
-  border-radius: 5px;
-
+    background-image: url('https://res.cloudinary.com/dve2z73dr/image/upload/v1506116547/20th-century-brown-vintage-paper-8-780x1085_pzwkgw.jpg');
 }
 
 ul {
   list-style-type: none;
 }
 
-.signup-form-box input[type="text"]{
 
-  font-size:14pt;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
-
-.signup-form-box > button {
-  align-self: center;
-  margin-top: 10px;
-  width: 10em;
-  border-radius: 5px;
-  font-size: 12pt;
-  background-color: white;
-  font-family:  'Raleway', sans-serif;
-
-
-
-}
-
-.signup-form-box{
-  display: flex;
-  flex-direction: column;
-  border-style: solid;
-  border-color: white;
-  background-color: #673c3a;
-  padding: 30px;
-  height: 25vh;
-  margin-top: 5em;
-  margin-right: 10em;
-  border-radius: 25px;
-}
-.session-page-container {
-  height: calc(100vh - 120px);
-
-}
-
-h1 {
-  margin: 0;
-  font-size: 44px;
-}
-.error{
-  color: #e00b0b;
-}
 .Sparkle {
 
 	font-size:44px;
 	font-family: 'Raleway';
+  font-weight: 600;
 
  -webkit-text-fill-color: transparent;
  background: -webkit-linear-gradient(transparent, transparent),

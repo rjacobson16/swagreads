@@ -34,3 +34,95 @@ Book.create!(
  description: 'A generic book',
  img_url: 'https://bookshoptalk.files.wordpress.com/2011/10/generic-book-cover.jpg?w=190'
 )
+
+Book.create!(
+ title: 'Test Book4',
+ author: 'Billy Authorson',
+ description: 'A generic book',
+ img_url: 'https://bookshoptalk.files.wordpress.com/2011/10/generic-book-cover.jpg?w=190'
+)
+
+
+Book.create!(
+ title: 'Test Book5',
+ author: 'Billy Authorson',
+ description: 'A generic book',
+ img_url: 'https://bookshoptalk.files.wordpress.com/2011/10/generic-book-cover.jpg?w=190'
+)
+
+Book.create!(
+ title: 'Test Book6',
+ author: 'Billy Authorson',
+ description: 'A generic book',
+ img_url: 'https://bookshoptalk.files.wordpress.com/2011/10/generic-book-cover.jpg?w=190'
+)
+
+Book.create!(
+ title: 'Test Book7',
+ author: 'Billy Authorson',
+ description: 'A generic book',
+ img_url: 'https://bookshoptalk.files.wordpress.com/2011/10/generic-book-cover.jpg?w=190'
+)
+
+Book.create!(
+ title: 'Test Book8',
+ author: 'Billy Authorson',
+ description: 'A generic book',
+ img_url: 'https://bookshoptalk.files.wordpress.com/2011/10/generic-book-cover.jpg?w=190'
+)
+
+Book.create!(
+ title: 'Test Book9',
+ author: 'Billy Authorson',
+ description: 'A generic book',
+ img_url: 'https://bookshoptalk.files.wordpress.com/2011/10/generic-book-cover.jpg?w=190'
+)
+
+Book.create!(
+ title: 'Test Book10',
+ author: 'Billy Authorson',
+ description: 'A generic book',
+ img_url: 'https://bookshoptalk.files.wordpress.com/2011/10/generic-book-cover.jpg?w=190'
+)
+
+Book.create!(
+ title: 'Test Book11',
+ author: 'Billy Authorson',
+ description: 'A generic book',
+ img_url: 'https://bookshoptalk.files.wordpress.com/2011/10/generic-book-cover.jpg?w=190'
+)
+
+Book.create!(
+ title: 'Test Book12',
+ author: 'Billy Authorson',
+ description: 'A generic book',
+ img_url: 'https://bookshoptalk.files.wordpress.com/2011/10/generic-book-cover.jpg?w=190'
+)
+
+ Book.create!(
+  title: 'Test Book13',
+  author: 'Billy Authorson',
+  description: 'A generic book',
+  img_url: 'https://bookshoptalk.files.wordpress.com/2011/10/generic-book-cover.jpg?w=190'
+ )
+
+ Book.create!(
+  title: 'Test Book14',
+  author: 'Billy Authorson',
+  description: 'A generic book',
+  img_url: 'https://bookshoptalk.files.wordpress.com/2011/10/generic-book-cover.jpg?w=190'
+ )
+
+ Book.create!(
+  title: 'Test Book15',
+  author: 'Billy Authorson',
+  description: 'A generic book',
+  img_url: 'https://bookshoptalk.files.wordpress.com/2011/10/generic-book-cover.jpg?w=190'
+ )
+
+ Book.create!(
+  title: 'Test Book16',
+  author: 'Billy Authorson',
+  description: 'A generic book',
+  img_url: 'https://bookshoptalk.files.wordpress.com/2011/10/generic-book-cover.jpg?w=190'
+ )
