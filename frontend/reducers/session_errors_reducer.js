@@ -7,14 +7,11 @@ const SessionErrorsReducer = (state =  [], action) => {
 
   switch(action.type){
     case RECEIVE_SESSION_ERRORS:
-      console.log('hitting RECEIVE_SESSION_ERRORS');
       let errors = action.errors;
       return merge([], [errors] );
     case RECEIVE_CURRENT_USER:
-      console.log('hitting RECEIVE_CURRENT_USER');
       return [];
     default:
-      console.log('hitting DEFAULT');
       return state;
   }
 };

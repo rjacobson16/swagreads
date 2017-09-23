@@ -14,3 +14,27 @@
   display: flex;
   flex-direction: column-reverse;
 }
+
+.book-show-container {
+  margin-top: 100px;
+  margin-left: 150px;
+  display: flex;
+  width: 50%;
+
+}
+
+.book-show-info {
+  order: 1;
+  align-self: flex-end;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+
+
+.book-show-image{
+  display: flex;
+  flex-direction: column-reverse;
+}

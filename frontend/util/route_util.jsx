@@ -8,7 +8,7 @@ const Auth = ({ component: Component, path, loggedIn }) => (
 
       <Component {...props} />
     ) : (
-      <Redirect to="/me" />
+      <Redirect to="/books" />
     )
   )} />
 );

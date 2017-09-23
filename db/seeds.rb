@@ -121,8 +121,8 @@ Book.create!(
  )
 
  Book.create!(
-  title: 'Test Book16',
+  title: 'Test Test Test Test Test Test Book18',
   author: 'Billy Authorson',
-  description: 'A generic book',
+  description: 'Fusce quis sem tristique diam porta porttitor ac sed lectus. Fusce lorem metus, aliquet non est vitae, volutpat commodo ipsum. Cras et nisl urna. Cras tincidunt consectetur lorem eu condimentum. Sed ut mauris nec ex venenatis pulvinar. Sed sed lacus dui. Fusce sagittis, augue in consequat tincidunt, eros magna venenatis ligula, ac auctor sem turpis eget purus.',
   img_url: 'https://bookshoptalk.files.wordpress.com/2011/10/generic-book-cover.jpg?w=190'
  )

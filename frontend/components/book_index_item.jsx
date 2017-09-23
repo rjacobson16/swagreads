@@ -3,7 +3,7 @@ import { Link, withRouter } from 'react-router-dom';
 
 const BookIndexItem = (props) => {
   return (
-    <li className='book-index-item'>
+    <li key={`${props.book.id}`} className='book-index-item'>
       <Link to={`/books/${props.book.id}`}>
         {props.book.title}
       </Link>
