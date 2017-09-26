@@ -117,11 +117,9 @@ Book.create!(
  Book.create!(
   title: "Freakonomics: A Rogue Economist Explores the Hidden Side of Everything",
   author: 'Steven D. Levitt, Stephen J. Dubner',
-  description: "Which is more dangerous, a gun or a swimming pool? What do schoolteachers and sumo wrestlers have in common? Why do drug dealers still live with their moms? How much do parents really matter? What kind of impact did Roe v. Wade have on violent crime? Freakonomics will literally redefine the way we view the modern world.
+  description: "Which is more dangerous, a gun or a swimming pool? What do schoolteachers and sumo wrestlers have in common? Why do drug dealers still live with their moms? How much do parents really matter? What kind of impact did Roe v. Wade have on violent crime?
 
-Which is more dangerous, a gun or a swimming pool? What do schoolteachers and sumo wrestlers have in common? Why do drug dealers still live with their moms? How much do parents really matter? What kind of impact did Roe v. Wade have on violent crime?
-
-These may not sound like typical questions for an economist to ask. But Steven D. Levitt is not a typical economist. He is a much heralded scholar who studies the stuff and riddles of everyday life -- from cheating and crime to sports and child rearing -- and whose conclusions regularly turn the conventional wisdom on its head. He usually begins with a mountain of data and a simple, unasked question. Some of these questions concern life-and-death issues; others have an admittedly freakish quality. Thus the new field of study contained in this book: freakonomics.
+These may not sound like typical questions for an economist to ask. But Steven D. Levitt is not a typical economist. He is a much heralded scholar who studies the stuff and riddles of everyday life -- from cheating and crime to sports and child rearing -- and whose conclusions regularly turn the conventional wisdom on its head. He usually begins with a mountain of data and a simple, unasked question. Some of these questions concern life-and-death issues; others have an admittedly freakish quality. Thus the new field of study contained in this book: freakonomics. \n
 
 Through forceful storytelling and wry insight, Levitt and co-author Stephen J. Dubner show that economics is, at root, the study of incentives -- how people get what they want, or need, especially when other people want or need the same thing. In Freakonomics, they set out to explore the hidden side of ... well, everything. The inner workings of a crack gang. The truth about real-estate agents. The myths of campaign finance. The telltale marks of a cheating schoolteacher. The secrets of the Ku Klux Klan.
 
@@ -260,6 +258,26 @@ Shelving.create!(
 Shelving.create!(
   bookshelf_id: 1,
   book_id: 7
+)
+
+Shelving.create!(
+  bookshelf_id: 1,
+  book_id: 11
+)
+
+Shelving.create!(
+  bookshelf_id: 1,
+  book_id: 13
+)
+
+Shelving.create!(
+  bookshelf_id: 1,
+  book_id: 14
+)
+
+Shelving.create!(
+  bookshelf_id: 1,
+  book_id: 16
 )
 
 Shelving.create!(
