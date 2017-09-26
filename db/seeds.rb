@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.delete_all
 Book.delete_all
+Bookshelf.delete_all
+Shelving.delete_all
 
 User.create!(
   username: 'guest',
@@ -214,3 +216,63 @@ Published in 1965, it won the Hugo Award in 1966 and the inaugural Nebula Award 
   description: "We all know the story of Joan of Arc. A peasant girl who hears voices from God. A warrior leading an army to victory, in an age that believes women cannot fight. The Maid of Orleans, and the saviour of France. Burned at the stake as a heretic at the age of just nineteen. Five hundred years later, a saint. Her case was heard in court twice over. One trial, in 1431, condemned her; the other, twenty-five years after her death, cleared her name. In the transcripts, we hear first-hand testimony from Joan, her family and her friends: a rare survival from the medieval world. What could be more revealing?",
   img_url: "http://res.cloudinary.com/dve2z73dr/image/upload/v1506140375/joan-of-arc_ozpjzn.jpg"
  )
+
+Bookshelf.create!(
+  name: 'Fiction',
+  user_id: 1
+)
+
+Bookshelf.create!(
+  name: 'Non-fiction',
+  user_id: 1
+)
+
+Shelving.create!(
+  bookshelf_id: 1,
+  book_id: 1
+)
+
+Shelving.create!(
+  bookshelf_id: 1,
+  book_id: 2
+)
+
+Shelving.create!(
+  bookshelf_id: 1,
+  book_id: 3
+)
+
+Shelving.create!(
+  bookshelf_id: 1,
+  book_id: 4
+)
+
+Shelving.create!(
+  bookshelf_id: 1,
+  book_id: 5
+)
+
+Shelving.create!(
+  bookshelf_id: 1,
+  book_id: 6
+)
+
+Shelving.create!(
+  bookshelf_id: 1,
+  book_id: 7
+)
+
+Shelving.create!(
+  bookshelf_id: 2,
+  book_id: 8
+)
+
+Shelving.create!(
+  bookshelf_id: 2,
+  book_id: 9
+)
+
+Shelving.create!(
+  bookshelf_id: 2,
+  book_id: 10
+)
