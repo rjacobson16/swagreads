@@ -5,6 +5,7 @@ class BookIndex extends React.Component {
 
   componentDidMount() {
     this.props.fetchAllBooks();
+    this.props.fetchAllBookshelves();
   }
   render () {
     return (

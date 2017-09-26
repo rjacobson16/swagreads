@@ -17,9 +17,9 @@ class BookShow extends React.Component {
       <div className='book-show-container'>
 
         <div className='book-show-image'>
-          <img  src={book.image_url}/>
 
           <h2 className='book-show-title'>{book.title}</h2>
+          <img  src={book.image_url}/>
         </div>
 
         <div className='book-show-info'>

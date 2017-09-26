@@ -1,13 +1,18 @@
 import {connect} from 'react-redux';
 import {fetchAllBooks}  from '../actions/book_actions';
-import {fetchAllBookshelves}  from '../actions/bookshelf_actions';
-import BookIndex from './book_index';
+import {fetchAllBookshelves,
+        createBookshelf,
+        deleteBookshelf}  from '../actions/bookshelf_actions';
+import BookshelfIndex from './bookshelf_index';
+
 
 const mapStateToProps = state => ({
-  books: Object.keys(state.entities.books).map(id => state.entities.books[id])
+  bookshelves: Object.keys(state.entities.bookshelves).map(id => state.entities.bookshelves[id]),
+  books: state.entities.books
 });
 
 const mapDispatchToProps = dispatch => ({
+
   fetchAllBooks: () => dispatch(fetchAllBooks()),
   fetchAllBookshelves: () => dispatch(fetchAllBookshelves())
 });
@@ -15,4 +20,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(BookIndex);
+)(BookshelfIndex);

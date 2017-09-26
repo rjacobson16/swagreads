@@ -29,7 +29,6 @@
 }
 
 .book-show-container {
-  margin-top: 100px;
   margin-left: 150px;
   display: flex;
   width: 50%;
@@ -43,12 +42,12 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  text-overflow: ellipsis;
+  min-width: 500px;
 }
 
 
 
 .book-show-image{
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }

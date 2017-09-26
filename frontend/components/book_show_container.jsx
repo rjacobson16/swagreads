@@ -3,7 +3,7 @@ import BookShow from './book_show';
 import { fetchSingleBook } from '../actions/book_actions';
 
 const mapStateToProps = (state, ownProps) => ({
-  book: state.books[ownProps.match.params.bookId]
+  book: state.entities.books[ownProps.match.params.bookId]
 });
 
 const mapDispatchToProps = dispatch => ({

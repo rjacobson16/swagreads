@@ -7,6 +7,7 @@ import {
   HashRouter
 } from 'react-router-dom';
 
+import BookshelfIndexContainer from './bookshelf_index_container';
 import HomePageContainer from './home_page_container';
 import SessionPageContainer from './session_page_container';
 import BookShowContainer from './book_show_container';
@@ -20,6 +21,7 @@ const App = () => (
       <Switch>
        <AuthRoute exact path="/" component={SessionPageContainer} />
        <ProtectedRoute exact path="/books" component={HomePageContainer} />
+       <ProtectedRoute exact path="/bookshelves/" component={BookshelfIndexContainer} />
        <ProtectedRoute exact path="/books/:bookId" component={BookShowContainer} />
      </Switch>
   </div>
