@@ -11,13 +11,13 @@ import BookshelfIndexContainer from './bookshelf_index_container';
 import HomePageContainer from './home_page_container';
 import SessionPageContainer from './session_page_container';
 import BookShowContainer from './book_show_container';
+import NavBarContainer from './navbar_container';
 
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
   <div>
-    <header>
-    </header>
+      <NavBarContainer />
       <Switch>
        <AuthRoute exact path="/" component={SessionPageContainer} />
        <ProtectedRoute exact path="/books" component={HomePageContainer} />

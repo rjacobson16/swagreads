@@ -21,3 +21,27 @@ ul {
  background: -o-linear-gradient(transparent, transparent);
  -webkit-background-clip: text;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #bacff7;
+  align-items: center;
+
+  border-bottom: 5px solid black;
+  font-family:'Fira Sans', sans-serif;
+}
+
+.navbar > h1 {
+  font-size:44px;
+	font-family: 'Raleway';
+}
+
+button{
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 12pt;
+  background-color: white;
+  font-family:  'Raleway', sans-serif;
+}

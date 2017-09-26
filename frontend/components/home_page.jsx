@@ -25,8 +25,6 @@ class HomePage extends React.Component {
   render () {
     return (
       <div>
-        <h1>This is the Home Page</h1>
-        <button onClick={this.logoutUser}>logout</button>
           <Switch>
            <ProtectedRoute exact path="/books" component={BookIndexContainer} />
            </Switch>
