@@ -1,8 +1,8 @@
 // precompile assets
 body{
     margin: 0;
-    background-image: url('https://res.cloudinary.com/dve2z73dr/image/upload/v1506116547/20th-century-brown-vintage-paper-8-780x1085_pzwkgw.jpg');
-}
+    background-color: #d6d0c4
+  }
 
 ul {
   list-style-type: none;
@@ -26,7 +26,7 @@ ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: #bacff7;
+  background-color: #A6B6E0;
   align-items: center;
 
   border-bottom: 5px solid black;
@@ -44,4 +44,25 @@ button{
   font-size: 12pt;
   background-color: white;
   font-family:  'Raleway', sans-serif;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.Select-control{
+  width: 50%;
+}
+
+.slider-button {
+  margin: auto;
+
+}
+.shelf-title{
+  margin-left: 2em;
+}
+
+.slider-button-container {
+  justify-content: center;
+  display: flex;
 }

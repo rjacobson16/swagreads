@@ -6,6 +6,11 @@ class Book < ApplicationRecord
     primary_key: :id,
     foreign_key: :book_id
 
+    has_many :reviews,
+      class_name: "Review",
+      primary_key: :id,
+      foreign_key: :book_id
+
   has_many :bookshelves,
     through: :shelvings,
     source: :bookshelf

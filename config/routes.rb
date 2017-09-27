@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     resource :session, only:[:create, :destroy]
     resources :books, only: [:index, :show]
     resources :bookshelves, only: [:index, :show, :create, :destroy]
+    resources :reviews
+    
     post "shelvings", {to: 'books#shelve'}
     get 'all_shelved_books', {to: 'bookshelves'}
   end

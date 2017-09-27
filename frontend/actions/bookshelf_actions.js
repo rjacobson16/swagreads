@@ -4,6 +4,8 @@ export const RECEIVE_ALL_BOOKSHELVES = 'RECEIVE_ALL_BOOKSHELVES';
 export const RECEIVE_BOOKSHELF = 'RECEIVE_BOOKSHELF';
 export const RECEIVE_BOOKSHELF_ERRORS = 'RECEIVE_BOOKSHELF_ERRORS';
 export const REMOVE_BOOKSHELF = 'REMOVE_BOOKSHELF';
+export const RECEIVE_SHELVED_BOOK = 'RECEIVE_SHELVED_BOOK';
+export const RECEIVE_SHELVING_ERRORS = 'RECEIVE_SHELVING_ERRORS';
 
 export const fetchAllBookshelves = () => dispatch => (
   ApiUtil.fetchAllBookshelves().then(bookshelves => dispatch(receiveAllBookshelves(bookshelves)))
@@ -19,9 +21,23 @@ export const createBookshelf = (bookshelf) => dispatch => (
 );
 
 export const deleteBookshelf = (id) => dispatch => (
-  ApiUtil.deleteBookshelf(id).then()
+  ApiUtil.deleteBookshelf(id).then(bookshelf => dispatch(removeBookshelf(bookshelf)))
 );
 
+export const addBookToBookshelf = (shelving) => dispatch => (
+  ApiUtil.addBookToBookshelf(shelving).then(shelving => dispatch(receiveShelvedBook(shelving)),
+  (error) => dispatch(receiveShelvingErrors(error.responseJSON)))
+);
+
+const receiveShelvedBook = (bookshelf) => ({
+  type: RECEIVE_SHELVED_BOOK,
+  bookshelf
+});
+
+const receiveShelvingErrors = errors => ({
+  type: RECEIVE_SHELVING_ERRORS,
+  errors
+});
 
 const receiveAllBookshelves = bookshelves => ({
   type: RECEIVE_ALL_BOOKSHELVES,

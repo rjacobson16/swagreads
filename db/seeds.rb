@@ -267,21 +267,17 @@ Shelving.create!(
 
 Shelving.create!(
   bookshelf_id: 1,
+  book_id: 12
+)
+
+Shelving.create!(
+  bookshelf_id: 1,
   book_id: 13
 )
 
-Shelving.create!(
-  bookshelf_id: 1,
-  book_id: 14
-)
 
 Shelving.create!(
   bookshelf_id: 1,
-  book_id: 16
-)
-
-Shelving.create!(
-  bookshelf_id: 2,
   book_id: 8
 )
 
@@ -293,4 +289,19 @@ Shelving.create!(
 Shelving.create!(
   bookshelf_id: 2,
   book_id: 10
+)
+
+Shelving.create!(
+  bookshelf_id: 2,
+  book_id: 14
+)
+
+Shelving.create!(
+  bookshelf_id: 2,
+  book_id: 16
+)
+
+Shelving.create!(
+  bookshelf_id: 2,
+  book_id: 24
 )

@@ -10,7 +10,7 @@ class BookshelfIndexItem extends React.Component {
   render() {
     return(
       <div>
-        <h3>{this.props.bookshelf.name}</h3>
+        <h3 className='shelf-title'>{this.props.bookshelf.name}</h3>
         <CarouselProvider
          naturalSlideWidth={135}
          naturalSlideHeight={200}
@@ -19,11 +19,15 @@ class BookshelfIndexItem extends React.Component {
 
            <Slider style={{height: '200px', display: 'flex', 'justify-content': 'space-between'}}>
              {this.props.bookshelf.book_ids.map((id, index) =>(<Slide index={index} style={{'width': '150px', 'margin': '0 50px'}}>
-               <Image style={{height: '200px', width: '140px'}} src ={this.props.books[id].image_url}></Image>
+               <Link to={`/books/${id}`}>
+                 <Image style={{height: '200px', width: '140px'}} src ={this.props.books[id].image_url}></Image>
+               </Link>
              </Slide>))}
            </Slider>
-           <ButtonBack>Back</ButtonBack>
-           <ButtonNext>next</ButtonNext>
+           <div className='slider-button-container'>
+             <ButtonBack className='slider-button'>Back</ButtonBack>
+             <ButtonNext className='slider-button'>next</ButtonNext>
+           </div>
        </CarouselProvider>
      </div>
    );

@@ -11,11 +11,3 @@ export const fetchBook = (id) => (
     url: `api/books/${id}`
   })
 );
-
-export const addBookToBookshelf = (shelving) => (
-  $.ajax({
-    method: 'POST',
-    url: `api/shelvings`,
-    data: {shelving}
-  })
-);

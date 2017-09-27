@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ShelveBookContainer from './shelve_book_container';
 
 class BookShow extends React.Component {
   componentDidMount() {
@@ -26,6 +27,7 @@ class BookShow extends React.Component {
           <p className='book-show-author'>{book.author}</p>
           <p className='book-show-desc'>{book.description}</p>
           <Link className='book-show-idx-link'to="/books">Back to Index</Link>
+          <ShelveBookContainer className='dropdown' book={book} />
         </div>
 
 

@@ -26,3 +26,11 @@ export const deleteBookshelf = (id) => (
     url: `api/bookshelves/${id}`
   })
 );
+
+export const addBookToBookshelf = (shelving) => (
+  $.ajax({
+    method: 'POST',
+    url: `api/shelvings`,
+    data: {shelving}
+  })
+);

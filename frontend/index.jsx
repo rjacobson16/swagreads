@@ -2,8 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
-import {addBookToBookshelf} from './util/book_api_util';
-import {fetchAllBookshelves} from './actions/bookshelf_actions';
+import {fetchAllReviews,
+        fetchReview,
+        fetchSingleReview,
+        createReview,
+        updateReview,
+        deleteReview} from './actions/review_actions';
+
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
@@ -18,10 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
    window.getState = store.getState;
    window.dispatch = store.dispatch;
 
+   window.fetchAllReviews = fetchAllReviews;
+   window.fetchSingleReview = fetchSingleReview,
+   window.createReview = createReview;
+   window.deleteReview = deleteReview;
+
 
    const root = document.getElementById('root');
    ReactDOM.render(<Root store={store}/>, root);
 });
-
-window.addBookToBookshelf = addBookToBookshelf;
-window.fetchAllBookshelves = fetchAllBookshelves;

@@ -9,9 +9,12 @@ class Api::BooksController < ApplicationController
 
   def shelve
     s = Shelving.new(shelving_params)
-    s.save
-    @bookshelf = Bookshelf.find_by_id(shelving_params[:bookshelf_id])
-    render 'api/bookshelves/show.json.jbuilder'
+    if s.save
+      @bookshelf = Bookshelf.find_by_id(shelving_params[:bookshelf_id])
+      render 'api/bookshelves/show.json.jbuilder'
+    else
+      render json: s.errors.full_messages, status: 422
+    end
   end
 
   private
