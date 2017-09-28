@@ -29,10 +29,18 @@
 }
 
 .book-show-container {
+  margin-top: 200px;
   margin-left: 150px;
   display: flex;
+  flex-direction: column;
   width: 50%;
 
+}
+
+.book-show-details {
+  display: flex;
+  align-items: center;
+  align-content: flex-start ;
 }
 
 .book-show-info {
@@ -41,8 +49,9 @@
   margin-left: 100px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-self: center;
-  min-width: 500px;
+  min-width: 400px;
 }
 
 

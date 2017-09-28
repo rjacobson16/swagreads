@@ -31,11 +31,14 @@ ul {
 
   border-bottom: 5px solid black;
   font-family:'Fira Sans', sans-serif;
+  position: fixed;
+  top: 0;
 }
 
 .navbar > h1 {
   font-size:44px;
 	font-family: 'Raleway';
+
 }
 
 button{
@@ -52,17 +55,4 @@ img {
 
 .Select-control{
   width: 50%;
-}
-
-.slider-button {
-  margin: auto;
-
-}
-.shelf-title{
-  margin-left: 2em;
-}
-
-.slider-button-container {
-  justify-content: center;
-  display: flex;
 }

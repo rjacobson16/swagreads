@@ -1,5 +1,5 @@
 import React from 'react';
-import BookIndexContainer from './book_index_container';
+import BookIndexContainer from './books/book_index_container';
 
 import {
   Route,

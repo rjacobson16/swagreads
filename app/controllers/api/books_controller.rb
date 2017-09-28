@@ -1,6 +1,6 @@
 class Api::BooksController < ApplicationController
   def index
-    @books = Book.all
+    @books = Book.all.includes(:reviews)
   end
 
   def show
