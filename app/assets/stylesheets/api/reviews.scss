@@ -10,8 +10,15 @@
 
 }
 
+textarea {
+  width: 300px;
+  height: 150px;
+}
+
 .review-form-container {
-  order: 2
+  order: 2;
+  display: flex;
+  align-items: center;
 }
 .review-form-box {
   display: flex;
@@ -44,7 +51,7 @@
 
 .rating > input:checked ~ label, /* show gold star when clicked */
 .rating:not(:checked) > label:hover, /* hover current star */
-.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+.rating:not(:checked) > label:hover ~ label { color: #d1b90c;  } /* hover previous stars in list */
 
 .rating > input:checked + label:hover, /* hover current star when changing rating */
 .rating > input:checked ~ label:hover,

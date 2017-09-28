@@ -33,6 +33,10 @@
   margin-left: 8px;
 }
 
+.login-form-box > button {
+    background-color: #6F1903;
+    color: white;
+}
 
 
 .signup-form-container{
@@ -90,6 +94,8 @@
   margin-top: 5em;
   margin-right: 10em;
   border-radius: 25px;
+  min-width: 200px;
+  height: 200px;
 }
 .session-page-container {
   height: calc(100vh - 120px);

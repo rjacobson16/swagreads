@@ -19,7 +19,9 @@ class NavBar extends React.Component {
     if (this.props.currentUser) {
       return (
         <div className='navbar'>
-          <h1><span style={{'margin-left': '75px'}} className='Sparkle'>swag</span><b>reads</b></h1>
+
+            <h1><span style={{'margin-left': '75px'}} className='Sparkle'>swag</span><b>reads</b></h1>
+
           <div>
             <NavLink  style={{'margin-right': '30px'}} to={`/bookshelves`}>My Bookshelves</NavLink>
             <NavLink to={`/books`}>Home</NavLink>

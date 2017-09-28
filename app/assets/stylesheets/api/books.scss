@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|PT+Serif');
+
 .book-index {
   display: flex;
   align-items: flex-start;
@@ -23,35 +25,36 @@
   max-width: 135px;
 }
 
+
 .book-index-item > a {
   max-width: 135px;
   text-align: center;
+  font-family: 'PT Serif', serif;
+
 }
 
 .book-show-container {
-  margin-top: 200px;
-  margin-left: 150px;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  margin-top: 200px;
+  align-items: center;
+  font-family: 'PT Serif', serif;
 
 }
 
 .book-show-details {
   display: flex;
-  align-items: center;
-  align-content: flex-start ;
+  max-width: 900px;
 }
 
 .book-show-info {
   order: 1;
-  align-self: flex-end;
-  margin-left: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-self: center;
+  justify-content: space-around;
+  margin: 50px;
   min-width: 400px;
+  min-height: 100%;
 }
 
 
