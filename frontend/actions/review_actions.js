@@ -4,9 +4,15 @@ export const RECEIVE_ALL_REVIEWS = 'RECEIVE_ALL_REVIEWS';
 export const RECEIVE_REVIEW = 'RECEIVE_REVIEW';
 export const RECEIVE_REVIEW_ERRORS = 'RECEIVE_REVIEW_ERRORS';
 export const REMOVE_REVIEW = 'REMOVE_REVIEW';
+export const RECEIVE_EVERY_USER_REVIEWS = 'RECEIVE_EVERY_USER_REVIEWS';
+
 
 export const fetchAllReviews = () => dispatch => (
   ApiUtil.fetchAllReviews().then(reviews => dispatch(receiveAllReviews(reviews)))
+);
+
+export const fetchEveryUserReviews = () => dispatch => (
+  ApiUtil.fetchEveryUserReviews().then(reviews => dispatch(receiveEveryUserReviews(reviews)))
 );
 
 export const fetchSingleReview = (id) => dispatch => (
@@ -26,15 +32,19 @@ export const updateReview = (review) => dispatch => (
 export const deleteReview = (id) => dispatch => (
   ApiUtil.deleteReview(id).then()
 );
+const receiveEveryUserReviews = reviews => ({
+  type: RECEIVE_EVERY_USER_REVIEWS,
+  reviews
+});
 
 const receiveAllReviews = reviews => ({
   type: RECEIVE_ALL_REVIEWS,
   reviews
 });
 
-const receiveReview= reviews => ({
+const receiveReview = review => ({
   type: RECEIVE_REVIEW,
-  reviews
+  review
 });
 
 const receiveReviewErrors = errors => ({

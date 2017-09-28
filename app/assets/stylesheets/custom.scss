@@ -30,7 +30,7 @@ ul {
   align-items: center;
 
   border-bottom: 5px solid black;
-  font-family:'Fira Sans', sans-serif;
+  font-family: 'PT Serif', serif;
   position: fixed;
   top: 0;
 }
@@ -63,10 +63,12 @@ img {
 
 a:link {
     text-decoration: none;
+    color: black;
 }
 
 a:visited {
     text-decoration: none;
+    color: black;
 }
 
 a:hover {

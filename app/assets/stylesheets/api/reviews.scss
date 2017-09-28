@@ -37,6 +37,17 @@ textarea {
   content: "\f005";
 }
 
+.star-item > label:before{
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: flex;
+  content: "\f005";
+}
+
+
 .rating > .half:before {
   content: "\f089";
   position: absolute;

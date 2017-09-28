@@ -13,6 +13,11 @@ class Api::ReviewsController < ApplicationController
 
   end
 
+  def everyone_reviews
+    @reviews = Review.all
+    render :index
+  end
+
   def index
     @reviews = current_user.reviews
   end

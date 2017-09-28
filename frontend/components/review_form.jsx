@@ -8,6 +8,7 @@ class ReviewForm extends React.Component {
                   book_id: this.props.book.id};
     this.update = this.update.bind(this);
     this.submitReview = this.submitReview.bind(this);
+    this.alreadyReviewed = this.alreadyReviewed.bind(this);
   }
   update(key) {
       return e => this.setState({
@@ -18,6 +19,16 @@ class ReviewForm extends React.Component {
   componentDidMount() {
     this.props.fetchAllBooks();
     this.props.fetchAllReviews();
+
+  }
+
+  alreadyReviewed() {
+    for (let i = 0; i < this.props.book.review_ids.length; i++) {
+        if (this.props.reviews[this.props.book.review_ids[i]]){
+          return true;
+        }
+      }
+      return false;
   }
 
   submitReview(e) {
@@ -29,6 +40,10 @@ class ReviewForm extends React.Component {
 
 
   render () {
+    if (this.alreadyReviewed()){
+      return null;
+    }
+
     return (
       <div className='review-form-container'>
         <form className='review-form-box' onSubmit={this.submitReview}>

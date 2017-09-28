@@ -5,6 +5,13 @@ export const fetchAllReviews = () => (
   })
 );
 
+export const fetchEveryUserReviews = () => (
+  $.ajax({
+    method: 'GET',
+    url: 'api/all_reviews'
+  })
+);
+
 export const fetchReview = (id) => (
   $.ajax({
     method: 'GET',

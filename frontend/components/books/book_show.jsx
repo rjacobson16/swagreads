@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ShelveBookContainer from '../shelve_book_container';
 import ReviewFormContainer from '../review_form_container';
+import ReviewIndexContainer from '../review_index_container';
 class BookShow extends React.Component {
   componentDidMount() {
     this.props.fetchSingleBook(this.props.match.params.bookId);
@@ -16,7 +17,7 @@ class BookShow extends React.Component {
 
     return (
     <div className='book-show-container'>
-        <h2 className='book-show-title'>{book.title}</h2>
+      <h2 className='book-show-title'>{book.title}</h2>
       <div className='book-show-details'>
         <div className='book-show-image'>
           <img  src={book.image_url}/>
@@ -29,8 +30,7 @@ class BookShow extends React.Component {
           <Link className='book-show-idx-link'to="/books">Back to Index</Link>
         </div>
       </div>
-
-
+      <ReviewIndexContainer book={book} />
     </div>
     );
   }

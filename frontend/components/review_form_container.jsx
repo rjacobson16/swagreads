@@ -5,7 +5,8 @@ import { createReview, fetchAllReviews} from '../actions/review_actions';
 import {fetchAllBooks} from '../actions/book_actions';
 
 const mapStateToProps = (state, ownProps) => ({
-  current_user: state.session.currentUser
+  current_user: state.session.currentUser,
+  reviews: state.entities.reviews
 });
 
 const mapDispatchToProps = dispatch => ({

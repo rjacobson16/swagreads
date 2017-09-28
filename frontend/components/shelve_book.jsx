@@ -24,7 +24,10 @@ class ShelveBook extends React.Component {
 
   handleShelving(e) {
       e.preventDefault();
-      this.props.addBookToBookshelf({book_id: this.props.book.id, bookshelf_id: this.state.shelfSelectValue.value});
+      this.props.addBookToBookshelf({book_id: this.props.book.id,
+        bookshelf_id: this.state.shelfSelectValue.value}).then(
+          this.props.history.push(`/bookshelves/`)
+        );
    }
 
   render() {

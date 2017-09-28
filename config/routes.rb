@@ -7,9 +7,10 @@ Rails.application.routes.draw do
     resources :books, only: [:index, :show]
     resources :bookshelves, only: [:index, :show, :create, :destroy]
     resources :reviews
-    
+
     post "shelvings", {to: 'books#shelve'}
-    get 'all_shelved_books', {to: 'bookshelves'}
+    get "all_reviews", {to: 'reviews#everyone_reviews'}
+
   end
   root "static_pages#root"
 

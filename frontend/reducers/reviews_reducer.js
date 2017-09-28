@@ -4,7 +4,7 @@ import {
   RECEIVE_ALL_REVIEWS,
   RECEIVE_REVIEW,
   REMOVE_REVIEW
-} from '../actions/bookshelf_actions';
+} from '../actions/review_actions';
 
 const ReviewsReducer = (state = {}, action) => {
   Object.freeze(state);
