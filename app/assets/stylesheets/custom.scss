@@ -35,11 +35,18 @@ ul {
   top: 0;
 }
 
-.navbar > h1 {
+.navbar > a > h1 {
   font-size:44px;
-	font-family: 'Raleway';
+	font-family: 'Raleway' !important;
 
 }
+
+.navbar > a:hover{
+	font-family: 'Raleway';
+  text-decoration: none !important;
+}
+
+
 
 button{
   padding: 4px 10px;

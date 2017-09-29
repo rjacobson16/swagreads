@@ -4,10 +4,29 @@
 
 .slider-button {
   margin: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
 
 }
 .shelf-title{
   margin-left: 2em;
+}
+
+.material-icons {
+  font-size: 24px;
+
+}
+
+
+.add-bookshelf{
+    margin-left: 48%;
+    display: flex;
+    align-items: center;
+}
+
+.add-bookshelf:hover{
+  color: #006633;
+  cursor: pointer;
 }
 
 .slider-button-container {
@@ -16,7 +35,12 @@
 }
 
 .bookshelf-index {
-  padding-top: 50px;
+  padding-top: 100px;
+  font-family: 'PT Serif', serif;
+}
+
+.bookshelf-index > h2 {
+  margin-left: 15px;
 }
 
 .bookshelf-show-container {

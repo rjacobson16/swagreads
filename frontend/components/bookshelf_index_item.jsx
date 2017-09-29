@@ -25,7 +25,7 @@ class BookshelfIndexItem extends React.Component {
              </Slide>))}
            </Slider>
            <div className='slider-button-container'>
-             <ButtonBack className='slider-button'>Back</ButtonBack>
+             <ButtonBack className='slider-button'>back</ButtonBack>
              <ButtonNext className='slider-button'>next</ButtonNext>
            </div>
        </CarouselProvider>

@@ -33,7 +33,6 @@ class ReviewForm extends React.Component {
 
   submitReview(e) {
     e.preventDefault;
-    console.log('SUBMIT');
     this.props.createReview(this.state);
   }
 
