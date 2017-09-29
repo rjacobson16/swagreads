@@ -11,7 +11,12 @@ class Book < ApplicationRecord
       primary_key: :id,
       foreign_key: :book_id
 
-  has_many :bookshelves,
+    has_many :read_statuses,
+     class_name: 'ReadStatus',
+     primary_key: :id,
+     foreign_key: :book_id
+
+   has_many :bookshelves,
     through: :shelvings,
     source: :bookshelf
 

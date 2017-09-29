@@ -13,6 +13,11 @@ class User < ApplicationRecord
   primary_key: :id,
   foreign_key: :user_id
 
+  has_many :read_statuses,
+  class_name: 'ReadStatus',
+  primary_key: :id,
+  foreign_key: :user_id
+
   after_initialize :ensure_session_token
   attr_reader :password
 

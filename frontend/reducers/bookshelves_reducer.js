@@ -6,6 +6,8 @@ import {
   REMOVE_BOOKSHELF,
   RECEIVE_SHELVED_BOOK} from '../actions/bookshelf_actions';
 
+  import {RECEIVE_CURRENT_USER} from '../actions/session_actions';
+
 const BookshelvesReducer = (state = {}, action) => {
   let newState;
   Object.freeze(state);
@@ -18,6 +20,8 @@ const BookshelvesReducer = (state = {}, action) => {
       newState = Object.assign({}, state);
       delete newState[action.bookshelf.id];
       return newState;
+    case RECEIVE_CURRENT_USER:
+      return {};
     case RECEIVE_SHELVED_BOOK:
        return merge({}, state, {[action.bookshelf.id]: action.bookshelf});
     default:

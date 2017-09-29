@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resources :books, only: [:index, :show]
     resources :bookshelves, only: [:index, :show, :create, :destroy]
     resources :reviews
+    resources :read_statuses, only: [:index, :show, :create, :update]
 
     post "shelvings", {to: 'books#shelve'}
     get "all_reviews", {to: 'reviews#everyone_reviews'}

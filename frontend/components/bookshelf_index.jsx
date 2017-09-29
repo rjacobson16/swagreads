@@ -18,7 +18,7 @@ class BookshelfIndex extends React.Component {
           <h2>Browse all bookshelves</h2>
           <CreateBookshelfFormContainer className='add-bookshelf' />
           {
-            this.props.bookshelves.reverse().map(bookshelf => (
+            this.props.bookshelves.slice().reverse().map(bookshelf => (
               <BookshelfIndexItem
                 key={bookshelf.id}
                 books = {this.props.books}
