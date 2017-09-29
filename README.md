@@ -49,3 +49,16 @@ render() {
 export default withRouter(BookshelfIndexItem);
 ```
 
+### Book Reviews
+
+* Users can write book reviews using the book review form on the Book Show page. The component responsible for rendering the book review form is set to only render if the user hasn't already reviewed the current book: 
+
+![add review](https://user-images.githubusercontent.com/26705787/31038375-4fda2600-a52b-11e7-85b3-2d202ff72be5.gif)
+
+### Future Additions/Improvements
+
+* Bookshelf Detail View: a show page for each individual bookshelf which allowing the user to edit the books in that shelf directly from the bookshelf page. 
+
+* Book recommendations: an engine which generates book recommendations for each user based on their book ratings and the book ratings of similar users.
+
+* Fix - usernames on comments: edit the review index item so that the username attached to the review's author_id is displayed.
