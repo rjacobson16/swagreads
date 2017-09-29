@@ -14,7 +14,7 @@ _________________________________
 ![add shelf](https://user-images.githubusercontent.com/26705787/31037219-c0d3ef14-a524-11e7-81f2-a3336ee8bdba.gif)
 ![shelve book](https://user-images.githubusercontent.com/26705787/31037213-b8768124-a524-11e7-867c-376c6871f80e.gif)
 
-The bookshelf carousel feature is implemented using the [pure-react-carousel] (https://www.npmjs.com/package/pure-react-carousel) library. The React component responsible for rendering the bookshelves is BookShelfIndex, which renders several BookshelfIndexItems, which in turn render `pure-react-carousel` `Slider` components, illustrated below:
+The bookshelf carousel feature is implemented using the [pure-react-carousel](https://www.npmjs.com/package/pure-react-carousel) library. The React component responsible for rendering the bookshelves is BookShelfIndex, which renders several BookshelfIndexItems, which in turn render `pure-react-carousel` `Slider` components, illustrated below:
 
 ```
 ...
