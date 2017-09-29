@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReviewIndexItem from './review_index_item';
 
+
 class ReviewIndex extends React.Component {
   constructor(props){
     super(props);
@@ -12,6 +13,8 @@ class ReviewIndex extends React.Component {
     this.props.fetchSingleBook(this.props.book.id);
   }
 
+
+
   render() {
     return (
       <div className='review-index-container'>
@@ -19,7 +22,8 @@ class ReviewIndex extends React.Component {
           {
             this.props.book.review_ids.map((id) => (
               <ReviewIndexItem review={this.props.reviews[id]}
-                 />
+                               key={id}
+                />
               )
             )
           }

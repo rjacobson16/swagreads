@@ -20,15 +20,15 @@ class NavBar extends React.Component {
       return (
         <div className='navbar'>
 
-            <h1><span style={{'margin-left': '75px'}} className='Sparkle'>swag</span><b>reads</b></h1>
+            <h1><span style={{'marginLeft': '75px'}} className='Sparkle'>swag</span><b>reads</b></h1>
 
           <div>
-            <NavLink  style={{'margin-right': '30px'}} to={`/bookshelves`}>My Bookshelves</NavLink>
+            <NavLink  style={{'marginRight': '30px'}} to={`/bookshelves`}>My Bookshelves</NavLink>
             <NavLink to={`/books`}>Home</NavLink>
           </div>
 
           <h2>Hello, {this.props.currentUser.username}</h2>
-          <button span style={{'margin-right': '40px'}} onClick={this.logoutUser}>Logout</button>
+          <button span style={{'marginRight': '40px'}} onClick={this.logoutUser}>Logout</button>
         </div>
       );
     } else {

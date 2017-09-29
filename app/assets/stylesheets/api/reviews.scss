@@ -28,6 +28,18 @@ textarea {
   margin-left: 20px;
 }
 
+.review-index-container {
+  margin-top: 30px;
+  max-width: 400px;
+}
+.review-index-item {
+ border:1px solid black;
+ padding: 20px;
+ border-radius: 25px;
+ background-color: #fff;
+ margin-top: 5px;
+}
+
 .rating > input { display: none; }
 .rating > label:before {
   margin: 5px;

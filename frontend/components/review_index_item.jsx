@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import StarRatingComponent from 'react-star-rating-component';
 
 class ReviewIndexItem extends React.Component {
   constructor(props){
@@ -20,9 +21,14 @@ class ReviewIndexItem extends React.Component {
     if (this.props.review) {
       let rating = this.ratingsDiv();
       return (
-        <div>
+        <div className='review-index-item'>
           <h2>{this.props.review.title}</h2>
-          <div dangerouslySetInnerHTML={rating} />
+            <StarRatingComponent
+              name={'String'}
+              value={this.props.review.rating}
+              editing={false}
+              />
+          <br/>
           <br/>
           <p>{this.props.review.body}</p>
         </div>

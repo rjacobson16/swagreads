@@ -24,8 +24,18 @@ class SessionPage extends React.Component {
     }
 
   demo() {
+    const DEMO_USERS = ['guest1',
+                        'guest2',
+                        'guest3',
+                        'guest4',
+                        'guest5',
+                        'guest6',
+                        'guest7',
+                        'guest8'
+                                ];
+    let random_user = DEMO_USERS[Math.floor(Math.random() * DEMO_USERS.length)];
     return e => this.setState({'login': {
-      'username': 'guest',
+      'username': random_user,
       'password': 'password'
     }});
   }

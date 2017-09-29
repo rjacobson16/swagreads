@@ -28,7 +28,9 @@ class BookShow extends React.Component {
           <p className='book-show-desc'>{book.description}</p>
           <ShelveBookContainer className='dropdown' book={book} />
           <Link className='book-show-idx-link'to="/books">Back to Index</Link>
+
         </div>
+
       </div>
       <ReviewIndexContainer book={book} />
     </div>

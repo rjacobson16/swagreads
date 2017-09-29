@@ -17,8 +17,8 @@ class BookshelfIndexItem extends React.Component {
          totalSlides={this.props.bookshelf.book_ids.length}
          visibleSlides={3}>
 
-           <Slider style={{height: '200px', display: 'flex', 'justify-content': 'space-between'}}>
-             {this.props.bookshelf.book_ids.map((id, index) =>(<Slide index={index} style={{'width': '150px', 'margin': '0 50px'}}>
+           <Slider style={{height: '200px', display: 'flex', 'justifyContent': 'space-between'}}>
+             {this.props.bookshelf.book_ids.map((id, index) =>(<Slide index={index} key={id} style={{'width': '150px', 'margin': '0 50px'}}>
                <Link to={`/books/${id}`}>
                  <Image style={{height: '200px', width: '140px'}} src ={this.props.books[id].image_url}></Image>
                </Link>
