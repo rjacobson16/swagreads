@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     resources :read_statuses, only: [:index, :show, :create, :update]
 
     post "shelvings", {to: 'books#shelve'}
+    delete "shelvings", {to: 'books#deshelve'}
     get "all_reviews", {to: 'reviews#everyone_reviews'}
 
   end

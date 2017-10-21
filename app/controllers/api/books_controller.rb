@@ -17,6 +17,12 @@ class Api::BooksController < ApplicationController
     end
   end
 
+  def deshelve
+    s = Shelving.find_by(book_id: shelving_params[:book_id], bookshelf_id: shelving_params[:bookshelf_id])
+    s.destroy
+    redirect_to :action => :index, status: 303
+  end
+
   private
 
   def book_params

@@ -262,7 +262,7 @@ Shelving.create!([
   {book_id: 8, bookshelf_id: 19},
   {book_id: 9, bookshelf_id: 20},
   {book_id: 10, bookshelf_id: 20},
-  {book_id: 14, bookshelf_id: 20},
+  {book_id: 16, bookshelf_id: 20},
   {book_id: 24, bookshelf_id: 20},
   {book_id: 18, bookshelf_id: 19},
   {book_id: 22, bookshelf_id: 19},

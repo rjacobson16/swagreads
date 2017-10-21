@@ -34,3 +34,11 @@ export const addBookToBookshelf = (shelving) => (
     data: {shelving}
   })
 );
+
+export const deleteBookFromBookshelf = (shelving) => (
+  $.ajax({
+    method: 'DELETE',
+    url: `api/shelvings`,
+    data: {shelving}
+  })
+);
