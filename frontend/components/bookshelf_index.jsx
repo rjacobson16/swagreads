@@ -12,6 +12,11 @@ class BookshelfIndex extends React.Component {
     this.props.fetchAllBookshelves();
   }
 
+  componentWillMount() {
+    this.props.fetchAllBooks();
+    this.props.fetchAllBookshelves();
+  }
+
 
   render () {
     return (

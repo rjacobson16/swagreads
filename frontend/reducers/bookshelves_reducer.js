@@ -28,7 +28,11 @@ const BookshelvesReducer = (state = {}, action) => {
        return merge({}, state, {[action.shelving.id]: action.shelving});
     case REMOVE_SHELVED_BOOK:
       newState = Object.assign({}, state);
-      newState[action.shelving.bookshelf_id][book_ids] = "HELLO";
+      newState[action.shelving.bookshelf_id].book_ids =
+      newState[action.shelving.bookshelf_id].book_ids.filter(function (el) {
+        return (el !== action.shelving.book_id);
+        });
+      return newState;
     default:
       return state;
   }

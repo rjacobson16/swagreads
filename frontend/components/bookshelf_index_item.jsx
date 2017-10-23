@@ -10,6 +10,7 @@ class BookshelfIndexItem extends React.Component {
   }
 
   render() {
+    if (this.props.books.length === 2) debugger;
     return(
       <div>
         <h3 className='shelf-title'>{this.props.bookshelf.name}</h3>

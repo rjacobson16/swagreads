@@ -7,6 +7,10 @@ import {createReadStatus,
 
 import * as ApiUtil from './util/read_status_api_util';
 
+// !!! testing
+import { selectBookshelfBooks } from './store/selectors';
+window.selectBookshelfBooks = selectBookshelfBooks;
+// !!! end
 
 
 document.addEventListener('DOMContentLoaded', () => {

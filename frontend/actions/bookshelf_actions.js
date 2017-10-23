@@ -32,7 +32,7 @@ export const addBookToBookshelf = (shelving) => dispatch => (
 );
 
 export const deleteBookFromBookshelf = (shelving) => dispatch =>  (
-  ApiUtil.deleteBookFromBookshelf(shelving).then(shelving => dispatch(removeShelvedBook(shelving)),
+  ApiUtil.deleteBookFromBookshelf(shelving).then(()=> dispatch(removeShelvedBook(shelving)),
   (error) => console.log('FUCK'))
 );
 
