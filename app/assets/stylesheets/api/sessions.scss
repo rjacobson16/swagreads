@@ -27,10 +27,21 @@
 .login-form-box input[type="text"]{
 
   font-size:14pt;
+  border-radius: 5px;
+
+}
+
+.login-form-box input[type="password"]{
+
+  font-size:14pt;
+  font-weight: lighter;
+  border-radius: 5px;
+
 }
 
 .login-input{
   margin-left: 8px;
+
 }
 
 .login-form-box > button {
@@ -46,7 +57,7 @@
   background-size: cover;
   height: calc(100vh - 120px);
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 
 }
 .meet-book{
@@ -56,21 +67,27 @@
     font-family:'Fira Sans', sans-serif;
     font-size: 16pt;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .signup-form-box input[type="password"]{
 
   font-size:14pt;
   border-radius: 5px;
+
 }
 
 
 
 .signup-form-box input[type="text"]{
-
+  font-weight: lighter;
   font-size:14pt;
   margin-bottom: 10px;
   border-radius: 5px;
+}
+
+.signup-form-box input[type="password"]{
+  font-weight: lighter;
 }
 
 .signup-form-box > button {
@@ -84,6 +101,7 @@
 }
 
 .signup-form-box{
+
   display: flex;
   flex-direction: column;
   border-style: solid;
@@ -92,10 +110,10 @@
   padding: 30px;
   height: 25vh;
   margin-top: 5em;
-  margin-right: 10em;
   border-radius: 25px;
   min-width: 200px;
   height: 200px;
+  border: 2px solid white;
 }
 .session-page-container {
   height: calc(100vh - 120px);

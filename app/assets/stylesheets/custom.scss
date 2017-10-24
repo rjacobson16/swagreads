@@ -1,4 +1,6 @@
 // precompile assets
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
 body{
     margin: 0;
     background-color: #d6d0c4
@@ -30,7 +32,7 @@ ul {
   align-items: center;
   z-index: 10000;
   border-bottom: 5px solid black;
-  font-family: 'PT Serif', serif;
+  font-family:  'Roboto Slab', serif;
   position: fixed;
   top: 0;
 }
@@ -81,7 +83,9 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: underline;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: white;
 }
 
 a:active {
