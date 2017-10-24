@@ -46,7 +46,9 @@ ul {
   text-decoration: none !important;
 }
 
-
+.carousel__slider-tray-wrapper.carousel__slider-tray-wrap--horizontal{
+  min-width: 1000px
+}
 
 button{
   padding: 4px 10px;
