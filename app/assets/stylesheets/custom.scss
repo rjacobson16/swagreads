@@ -58,6 +58,7 @@ button{
   font-size: 12pt;
   background-color: white;
   font-family:  'Raleway', sans-serif;
+  height: 30px;
 }
 
 button:hover {
@@ -83,11 +84,16 @@ a:visited {
 }
 
 a:hover {
-    padding: 2px;
-    border-radius: 5px;
-    background-color: white;
+    text-decoration: underline;
 }
 
 a:active {
     text-decoration: underline;
+}
+
+.nav-session {
+  display: flex;
+  width: 15em;
+  justify-content: space-between;
+  align-items: center;
 }

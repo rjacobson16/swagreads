@@ -26,9 +26,10 @@ class NavBar extends React.Component {
             <NavLink  className='nav-link' style={{'marginRight': '30px'}} to={`/bookshelves`}>My Bookshelves</NavLink>
             <NavLink className='nav-link' to={`/books`}>Home</NavLink>
           </div>
-
-          <h2>Hi, {this.props.currentUser.username}!</h2>
-          <button span style={{'marginRight': '40px'}} onClick={this.logoutUser}>Logout</button>
+          <div className='nav-session'>
+            <h2>Hi, {this.props.currentUser.username}!</h2>
+            <button span style={{'marginRight': '40px'}} onClick={this.logoutUser}>Logout</button>
+          </div>
         </div>
       );
     } else {
