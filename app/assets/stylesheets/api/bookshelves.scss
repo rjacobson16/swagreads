@@ -46,3 +46,28 @@
 .bookshelf-show-container {
   margin-top: 120px;
 }
+
+.shelf_item{
+
+}
+
+.shelf_item:hover img{
+    opacity:0.5;
+
+}
+
+.shelf_item:hover button{
+display: block;
+
+}
+
+.shelf_item button{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+
+.delete_from_shelf {
+  background: none;
+}

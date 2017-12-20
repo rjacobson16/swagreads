@@ -21,11 +21,12 @@ class BookshelfIndexItem extends React.Component {
          visibleSlides={3}>
 
            <Slider style={{height: '240px', display: 'flex', 'justifyContent': 'space-between'}}>
-             {this.props.bookshelf.book_ids.map((id, index) =>(<Slide index={index} key={id} style={{'width': '150px','display': 'flex','alignItems': 'center', 'margin': '0 50px'}}>
+             {this.props.bookshelf.book_ids.map((id, index) =>(<Slide  index={index} key={id}
+              style={{'width': '150px','display': 'flex','alignItems': 'center', 'margin': '0 50px'}} className="shelf_item">
                <Link to={`/books/${id}`}>
                  <Image style={{height: '200px', width: '140px'}} src ={this.props.books[id].image_url}></Image>
                </Link>
-               <button style={{height: '35px', 'marginLeft': '55px', 'marginTop': '5px'}}
+               <button className= 'delete_from_shelf' style={{height: '35px', 'marginLeft': '55px', 'marginTop': '5px'}}
                  onClick={() => this.props.deleteBookFromBookshelf({book_id: id, bookshelf_id: this.props.bookshelf.id})}>
                  X
                </button>
