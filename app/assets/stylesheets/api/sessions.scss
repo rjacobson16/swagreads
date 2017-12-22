@@ -8,8 +8,8 @@
 }
 
 .login-form-container {
-  padding: 30px;
-  height: 60px;
+  padding: 20px;
+  height: 40px;
   font-family:  'Raleway', sans-serif;
   display: flex;
   justify-content: space-between;
@@ -62,7 +62,7 @@
 
   background-image: url('http://res.cloudinary.com/dve2z73dr/image/upload/v1506116419/books_rsiup9.jpg');
   background-size: cover;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
 
@@ -126,7 +126,7 @@
   border: 2px solid white;
 }
 .session-page-container {
-  height: calc(100vh - 120px);
+  height: calc(100vh);
   background-image: url('https://res.cloudinary.com/dve2z73dr/image/upload/v1506116547/20th-century-brown-vintage-paper-8-780x1085_pzwkgw.jpg');
 
 }
