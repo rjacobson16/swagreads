@@ -3,7 +3,8 @@
 
 body{
     margin: 0;
-    background-color: #fdf5e6;
+    background-color: #f4f4f4;
+    background-color: #e4e4e4;
   }
 
 ul {
@@ -28,10 +29,10 @@ ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: #A6B6E0;
+  background-color: #984b43;
   align-items: center;
   z-index: 10000;
-  border-bottom: 5px solid black;
+  // border-bottom: 5px solid black;
   font-family:  'Roboto Slab', serif;
   position: fixed;
   top: 0;
@@ -85,6 +86,15 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
+}
+
+.nav-link:hover {
+  color: #e4e4e4;
+
+}
+
+.nav-link{
+  font-size: 22px;
 }
 
 a:active {
