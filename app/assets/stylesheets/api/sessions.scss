@@ -29,6 +29,8 @@
   font-size:14pt;
   border-radius: 5px;
   font-weight: lighter;
+  border-color: transparent;
+  padding: 4px;
 
 }
 
@@ -37,8 +39,11 @@
   font-size:14pt;
   font-weight: lighter;
   border-radius: 5px;
+  border-color: transparent;
+  padding:  4px;
 
 }
+
 
 .login-input{
   margin-left: 8px;
@@ -48,6 +53,7 @@
 .login-form-box > button {
     background-color: #6F1903;
     color: white;
+    padding-bottom:  5px;
 }
 
 
@@ -75,6 +81,9 @@
 
   font-size:14pt;
   border-radius: 5px;
+  border-color: transparent;
+  padding: 4px;
+  font-weight: lighter;
 
 }
 
@@ -85,11 +94,11 @@
   font-size:14pt;
   margin-bottom: 10px;
   border-radius: 5px;
+  border-color: transparent;
+  padding: 4px;
 }
 
-.signup-form-box input[type="password"]{
-  font-weight: lighter;
-}
+
 
 .signup-form-box > button {
   align-self: center;
@@ -98,7 +107,7 @@
   border-radius: 5px;
   font-size: 12pt;
   background-color: white;
-  font-family:  'Raleway', sans-serif;
+  font-family:  'Roboto Slab', serif;
 }
 
 .signup-form-box{
@@ -122,6 +131,12 @@
 
 }
 
+.logout{
+  border: none;
+  margin-left: 20px;
+  color: white;
+  background-color: black;
+}
 
 .error{
   color: #e00b0b;

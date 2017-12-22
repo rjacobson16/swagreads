@@ -28,7 +28,7 @@ class NavBar extends React.Component {
           </div>
           <div className='nav-session'>
             <h2>Hi, {this.props.currentUser.username}!</h2>
-            <button span style={{'marginRight': '40px'}} onClick={this.logoutUser}>Logout</button>
+            <button  className = 'logout' span style={{'marginRight': '40px'}} onClick={this.logoutUser}>Logout</button>
           </div>
         </div>
       );
