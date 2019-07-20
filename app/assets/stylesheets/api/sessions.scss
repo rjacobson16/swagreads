@@ -2,6 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@font-face {
+  font-family: "Nimbus Sans D OT Light";
+  src: url("/assets/Nimbus-Sans-D-OT-Light_32752.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "Nimbus Sans D OT Ultra Light";
+  src: url("/assets/Nimbus-Sans-D-OT-Ultra-Light_32757.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
 .login-form-container > h1 {
   margin: 0;
   font-size: 44px;
@@ -10,95 +19,93 @@
 .login-form-container {
   padding: 20px;
   height: 40px;
-  font-family:  'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   display: flex;
   justify-content: space-between;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .logo {
+    font-size: 44px;
+    font-family: "Nimbus Sans D OT Light";
+
+    .ultra-thin {
+      font-family: "Nimbus Sans D OT Ultra Light";
+    }
+  }
 }
 
-.login-form-box input[type="password"]{
-  font-size:14pt;
+.login-form-box input[type="password"] {
+  font-size: 14pt;
 }
 
-.login-form-box{
+.login-form-box {
   display: flex;
   align-items: center;
 }
 
-.login-form-box input[type="text"]{
-
-  font-size:14pt;
+.login-form-box input[type="text"] {
+  font-size: 14pt;
   border-radius: 5px;
   font-weight: lighter;
   border-color: transparent;
   padding: 4px;
-
 }
 
-.login-form-box input[type="password"]{
-
-  font-size:14pt;
+.login-form-box input[type="password"] {
+  font-size: 14pt;
   font-weight: lighter;
   border-radius: 5px;
   border-color: transparent;
-  padding:  4px;
-
+  padding: 4px;
 }
 
-
-.login-input{
+.login-input {
   margin-left: 8px;
-
 }
 
 .login-form-box > button {
-    background-color: #6F1903;
-    color: white;
-    padding-bottom:  5px;
+  background-color: #6f1903;
+  color: white;
+  padding-bottom: 5px;
 }
 
-
-.signup-form-container{
-
-
-  background-image: url('http://res.cloudinary.com/dve2z73dr/image/upload/v1506116419/books_rsiup9.jpg');
+.signup-form-container {
+  background-image: url("http://res.cloudinary.com/dve2z73dr/image/upload/v1506116419/books_rsiup9.jpg");
   background-size: cover;
   height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
-
 }
-.meet-book{
-
-    color: #fff;
-    text-align: center;
-    font-family:'Fira Sans', sans-serif;
-    font-size: 16pt;
-    font-weight: 500;
-    margin-bottom: 20px;
+.meet-book {
+  color: #fff;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16pt;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
-.signup-form-box input[type="password"]{
-
-  font-size:14pt;
+.signup-form-box input[type="password"] {
+  font-size: 14pt;
   border-radius: 5px;
   border-color: transparent;
   padding: 4px;
   font-weight: lighter;
-
 }
 
-
-
-.signup-form-box input[type="text"]{
+.signup-form-box input[type="text"] {
   font-weight: lighter;
-  font-size:14pt;
+  font-size: 14pt;
   margin-bottom: 10px;
   border-radius: 5px;
   border-color: transparent;
   padding: 4px;
 }
-
-
 
 .signup-form-box > button {
   align-self: center;
@@ -107,16 +114,15 @@
   border-radius: 5px;
   font-size: 12pt;
   background-color: white;
-  font-family:  'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
-.signup-form-box{
-
+.signup-form-box {
   display: flex;
   flex-direction: column;
   border-style: solid;
   border-color: white;
-  background-color: #6F1903;
+  background-color: #6f1903;
   padding: 30px;
   height: 25vh;
   margin-top: 5em;
@@ -127,17 +133,16 @@
 }
 .session-page-container {
   height: calc(100vh);
-  background-image: url('https://res.cloudinary.com/dve2z73dr/image/upload/v1506116547/20th-century-brown-vintage-paper-8-780x1085_pzwkgw.jpg');
-
+  background-image: url("https://res.cloudinary.com/dve2z73dr/image/upload/v1506116547/20th-century-brown-vintage-paper-8-780x1085_pzwkgw.jpg");
 }
 
-.logout{
+.logout {
   border: none;
   margin-left: 20px;
   color: white;
   background-color: black;
 }
 
-.error{
+.error {
   color: #e00b0b;
 }

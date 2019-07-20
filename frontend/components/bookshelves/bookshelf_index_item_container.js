@@ -3,7 +3,7 @@ import {
   deleteBookFromBookshelf,
   fetchAllBookshelves
 } from "../../actions/bookshelf_actions";
-import BookshelfIndexItem from "../bookshelf_index_item";
+import BookshelfIndexItem from "./bookshelf_index_item";
 import { selectBookshelfBooks } from "../../store/selectors";
 
 function mapStateToProps(state, ownProps) {

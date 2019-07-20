@@ -101,6 +101,9 @@ GEM
       guard (~> 2.8)
       guard-compat (~> 1.0)
       multi_json (~> 1.8)
+    guard-minitest (2.4.6)
+      guard-compat (~> 1.2)
+      minitest (>= 3.0)
     http_parser.rb (0.6.0)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
@@ -238,7 +241,8 @@ DEPENDENCIES
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   font-awesome-rails
-  guard-livereload (~> 2.5)
+  guard-livereload (~> 2.5.2)
+  guard-minitest
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)

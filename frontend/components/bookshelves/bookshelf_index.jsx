@@ -1,7 +1,7 @@
 import React from "react";
 import BookshelfIndexItemContainer from "./bookshelf_index_item_container";
 import ReactDOM from "react-dom";
-import CreateBookshelfFormContainer from "../create_bookshelf_form_container";
+import CreateBookshelfFormContainer from "./create_bookshelf_form_container";
 
 class BookshelfIndex extends React.Component {
   constructor(props) {
