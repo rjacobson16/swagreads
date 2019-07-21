@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ShelveBookContainer from "../bookshelves/shelve_book_container";
-import ReviewFormContainer from "../review_form_container";
-import ReviewIndexContainer from "../review_index_container";
+import ReviewFormContainer from "../reviews/review_form_container";
+import ReviewIndexContainer from "../reviews/review_index_container";
 class BookShow extends React.Component {
   componentDidMount() {
     this.props.fetchSingleBook(this.props.match.params.bookId);

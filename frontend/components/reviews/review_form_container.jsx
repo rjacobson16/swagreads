@@ -1,8 +1,8 @@
-import { connect } from 'react-redux';
-import ReviewForm from './review_form';
-import { createReview, fetchAllReviews} from '../actions/review_actions';
+import { connect } from "react-redux";
+import ReviewForm from "./review_form";
+import { createReview, fetchAllReviews } from "../../actions/review_actions";
 
-import {fetchAllBooks} from '../actions/book_actions';
+import { fetchAllBooks } from "../../actions/book_actions";
 
 const mapStateToProps = (state, ownProps) => ({
   current_user: state.session.currentUser,

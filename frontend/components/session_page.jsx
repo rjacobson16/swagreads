@@ -7,12 +7,14 @@ class SessionPage extends React.Component {
     super(props);
     this.state = {
       signup: { username: "", password: "" },
-      login: { username: "", password: "" }
+      login: { username: "", password: "" },
+      showMobileMask: false
     };
 
     this.loginExistingUser = this.loginExistingUser.bind(this);
     this.createNewUser = this.createNewUser.bind(this);
     this.demo = this.demo.bind(this);
+    this.toggleMobileLoginMask = this.toggleMobileLoginMask.bind(this);
   }
 
   update(key, field) {
@@ -37,11 +39,11 @@ class SessionPage extends React.Component {
       "guest7",
       "guest8"
     ];
-    let random_user = DEMO_USERS[Math.floor(Math.random() * DEMO_USERS.length)];
+    let randomUser = DEMO_USERS[Math.floor(Math.random() * DEMO_USERS.length)];
     return e =>
       this.setState({
         login: {
-          username: random_user,
+          username: randomUser,
           password: "password"
         }
       });
@@ -51,7 +53,6 @@ class SessionPage extends React.Component {
     e.preventDefault();
     const user = this.state.login;
     this.props.login(user);
-    console.log(this.props.errors);
   }
 
   createNewUser(e) {
@@ -71,8 +72,11 @@ class SessionPage extends React.Component {
     );
   }
 
+  toggleMobileLoginMask(value) {
+    this.setState({ showMobileMask: value });
+  }
+
   render() {
-    console.log(this.props.errors);
     return (
       <div className="session-page-container">
         <div className="login-form-container">
@@ -99,19 +103,65 @@ class SessionPage extends React.Component {
               className="login-input"
             />
 
-            <button className="login-input">Sign In</button>
+            <button className="login-input">Sign in</button>
             <button className="login-input" onClick={this.demo()}>
-              DEMO!
+              Demo!
+            </button>
+          </form>
+          <button
+            className="login-input mobile-login-btn"
+            onClick={() => this.toggleMobileLoginMask(true)}
+          >
+            Sign in
+          </button>
+        </div>
+
+        <div
+          className={
+            this.state.showMobileMask
+              ? "mobile-login-mask show-mask"
+              : "mobile-login-mask"
+          }
+        >
+          <button
+            className="close-mobile-mask"
+            onClick={() => this.toggleMobileLoginMask(false)}
+          >
+            &times;
+          </button>
+          <form onSubmit={this.loginExistingUser} className="login-form-box">
+            <h1 className="logo">
+              <span className="ultra-thin">swag</span>
+              <b>reads</b>
+            </h1>
+            <div className="error">{this.renderErrors()}</div>
+
+            <input
+              type="text"
+              placeholder="Username"
+              value={this.state.username}
+              onChange={this.update("login", "username")}
+              className="login-input"
+            />
+
+            <input
+              type="password"
+              placeholder="Password"
+              value={this.state.password}
+              onChange={this.update("login", "password")}
+              className="login-input"
+            />
+
+            <button className="login-input">Sign in</button>
+            <button className="login-input" onClick={this.demo()}>
+              Demo!
             </button>
           </form>
         </div>
 
         <div className="signup-form-container">
           <form onSubmit={this.createNewUser} className="signup-form-box">
-            <p className="meet-book">
-              Meet your next <br /> favorite book.
-            </p>
-
+            <p className="new-here">New here? Create a free account!</p>
             <input
               type="text"
               placeholder="Username"
@@ -127,9 +177,7 @@ class SessionPage extends React.Component {
               onChange={this.update("signup", "password")}
               className="signup-input"
             />
-
-            <br />
-            <button>Sign Up</button>
+            <button>Sign up</button>
           </form>
         </div>
       </div>

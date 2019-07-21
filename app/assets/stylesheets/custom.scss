@@ -8,10 +8,24 @@
   src: url("/assets/Nimbus-Sans-D-OT-Ultra-Light_32757.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+html {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+#root,
+.data-reactroot,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  background-color: #f4f4f4;
-  background-color: #e4e4e4;
+  background-color: white;
+  font-family: "Lato", sans-serif;
 }
 
 ul {
@@ -26,7 +40,6 @@ ul {
   align-items: center;
   z-index: 10000;
   // border-bottom: 5px solid black;
-  font-family: "Roboto Slab", serif;
   position: fixed;
   top: 0;
 
@@ -55,7 +68,6 @@ button {
   border-radius: 5px;
   font-size: 12pt;
   background-color: white;
-  font-family: "Roboto Slab", serif;
   height: 30px;
 }
 

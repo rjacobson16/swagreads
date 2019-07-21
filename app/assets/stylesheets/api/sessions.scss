@@ -11,17 +11,37 @@
   src: url("/assets/Nimbus-Sans-D-OT-Ultra-Light_32757.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
-.login-form-container > h1 {
-  margin: 0;
-  font-size: 44px;
+.session-page-container {
+  width: 100%;
+  height: 100%;
+  input {
+    border: none;
+    border-radius: 3px;
+  }
+}
+
+.logo {
+  font-family: "Nimbus Sans D OT Light";
+  font-weight: 300;
+  color: #463020;
+
+  .ultra-thin {
+    font-family: "Nimbus Sans D OT Ultra Light";
+    font-weight: 100;
+  }
 }
 
 .login-form-container {
-  padding: 20px;
+  padding: 20px 400px;
   height: 40px;
-  font-family: "Raleway", sans-serif;
   display: flex;
   justify-content: space-between;
+  background-color: #f4f1ea;
+
+  h1 {
+    margin: 0;
+    font-size: 44px;
+  }
 
   a {
     &:hover {
@@ -30,119 +50,252 @@
   }
 
   .logo {
-    font-size: 44px;
-    font-family: "Nimbus Sans D OT Light";
+    font-size: 48px;
+  }
 
-    .ultra-thin {
-      font-family: "Nimbus Sans D OT Ultra Light";
+  .login-form-box {
+    align-items: center;
+
+    input {
+      width: 120px;
+      padding: 5px;
+      font-size: 13px;
+      margin-left: 8px;
     }
   }
-}
 
-.login-form-box input[type="password"] {
-  font-size: 14pt;
+  button {
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 8px 12px;
+    background-color: #382110;
+    border: 1px solid #382110;
+    color: white;
+    height: auto;
+
+    &:hover {
+      background-color: #58371f;
+    }
+  }
+
+  .mobile-login-btn {
+    display: none;
+  }
 }
 
 .login-form-box {
   display: flex;
-  align-items: center;
+
+  input {
+    background-color: white;
+    border: #dcd6cc 1px solid;
+  }
 }
 
-.login-form-box input[type="text"] {
-  font-size: 14pt;
-  border-radius: 5px;
-  font-weight: lighter;
-  border-color: transparent;
-  padding: 4px;
-}
+.mobile-login-mask {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f4f1ea;
 
-.login-form-box input[type="password"] {
-  font-size: 14pt;
-  font-weight: lighter;
-  border-radius: 5px;
-  border-color: transparent;
-  padding: 4px;
-}
+  &.show-mask {
+    display: initial;
+  }
 
-.login-input {
-  margin-left: 8px;
-}
+  .close-mobile-mask {
+    background-color: transparent;
+    color: #382110;
+    font-size: 28px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
 
-.login-form-box > button {
-  background-color: #6f1903;
-  color: white;
-  padding-bottom: 5px;
+  .logo {
+    font-size: 44px;
+    margin: auto;
+  }
+
+  .login-form-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    padding: 15vh 24px 0;
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      margin: 8px 0;
+    }
+
+    button {
+      margin: 8px 0;
+      padding: 10px 0;
+      background-color: #382110;
+      border: 1px solid #382110;
+      color: white;
+      height: auto;
+    }
+  }
 }
 
 .signup-form-container {
-  background-image: url("http://res.cloudinary.com/dve2z73dr/image/upload/v1506116419/books_rsiup9.jpg");
-  background-size: cover;
-  height: calc(100vh - 80px);
-  display: flex;
-  justify-content: center;
-}
-.meet-book {
-  color: #fff;
-  text-align: center;
-  font-family: "Fira Sans", sans-serif;
-  font-size: 16pt;
-  font-weight: 500;
-  margin-bottom: 20px;
+  background: linear-gradient(135deg, #e3ad89 10%, #f4bf93 60%, #0788a9);
+  max-width: 100%;
+  height: 295px;
+  padding: 0 400px;
+  position: relative;
+
+  .signup-form-box {
+    float: right;
+    width: 300px;
+    height: 100%;
+    background-color: #f4f1ea;
+    border-top: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    padding: 8px;
+
+    .new-here {
+      color: black;
+      display: block;
+      font-size: 18px;
+      margin: 8px 0 10px;
+    }
+
+    input {
+      border: #dcd6cc 1px solid;
+      color: #333333;
+      font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+      width: 270px;
+      padding: 7px 5px;
+      display: block;
+      margin: 8px 0;
+      font-size: 16px;
+      font-weight: lighter;
+    }
+
+    button {
+      padding: 8px 12px;
+      border: 0px;
+      border-radius: 4px;
+      background-color: #fdd05f;
+      font-size: 18px;
+      line-height: 22px;
+      height: auto;
+      // margin-left: 0;
+
+      &:hover {
+        background-color: #ffd56d;
+      }
+    }
+  }
+
+  :after {
+    content: "";
+    background-image: url("/assets/bibliophile.svg");
+    background-size: 400px 295px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 295px;
+    position: absolute;
+    top: 0;
+    left: 380px;
+  }
 }
 
-.signup-form-box input[type="password"] {
-  font-size: 14pt;
-  border-radius: 5px;
-  border-color: transparent;
-  padding: 4px;
-  font-weight: lighter;
+// .signup-form-box input[type="text"] {
+//   font-weight: lighter;
+//   font-size: 14pt;
+//   margin-bottom: 10px;
+//   border-radius: 5px;
+//   border-color: transparent;
+//   padding: 4px;
+// }
+
+// .logout {
+//   border: none;
+//   margin-left: 20px;
+//   color: white;
+//   background-color: black;
+// }
+
+// .error {
+//   color: #e00b0b;
+// }
+
+@media (max-width: 1500px) {
+  .login-form-container {
+    padding: 20px 300px;
+  }
+  .signup-form-container {
+    padding: 0px 300px;
+
+    :after {
+      left: 280px;
+    }
+  }
 }
 
-.signup-form-box input[type="text"] {
-  font-weight: lighter;
-  font-size: 14pt;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border-color: transparent;
-  padding: 4px;
+@media (max-width: 1290px) {
+  .login-form-container {
+    padding: 20px 120px;
+  }
+
+  .signup-form-container {
+    padding: 20px 120px;
+
+    :after {
+      left: 100px;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .login-form-container {
+    padding: 20px 120px;
+  }
+
+  .signup-form-container {
+    padding: 20px 120px;
+
+    :after {
+      left: 100px;
+    }
+  }
 }
 
-.signup-form-box > button {
-  align-self: center;
-  margin-top: 10px;
-  width: 10em;
-  border-radius: 5px;
-  font-size: 12pt;
-  background-color: white;
-  font-family: "Roboto Slab", serif;
-}
+@media (max-width: 768px) {
+  .login-form-container {
+    padding: 20px;
+    align-items: center;
 
-.signup-form-box {
-  display: flex;
-  flex-direction: column;
-  border-style: solid;
-  border-color: white;
-  background-color: #6f1903;
-  padding: 30px;
-  height: 25vh;
-  margin-top: 5em;
-  border-radius: 25px;
-  min-width: 200px;
-  height: 200px;
-  border: 2px solid white;
-}
-.session-page-container {
-  height: calc(100vh);
-  background-image: url("https://res.cloudinary.com/dve2z73dr/image/upload/v1506116547/20th-century-brown-vintage-paper-8-780x1085_pzwkgw.jpg");
-}
+    .mobile-login-btn {
+      display: initial;
+    }
 
-.logout {
-  border: none;
-  margin-left: 20px;
-  color: white;
-  background-color: black;
-}
+    .login-form-box {
+      display: none;
+    }
+  }
 
-.error {
-  color: #e00b0b;
+  .signup-form-container {
+    padding: 0px;
+
+    .signup-form-box {
+      float: unset;
+      margin: auto;
+    }
+
+    :after {
+      top: 105%;
+      background-size: 320px;
+      left: calc(50vw - 160px);
+      // display: none;
+    }
+  }
 }
