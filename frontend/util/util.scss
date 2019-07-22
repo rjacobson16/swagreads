@@ -28,4 +28,19 @@
       text-decoration: none;
     }
   }
+
+  button {
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 8px 12px;
+    background-color: #382110;
+    border: 1px solid #382110;
+    color: white;
+    height: auto;
+
+    &:hover {
+      background-color: #58371f;
+    }
+  }
 }
