@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./navbar.scss";
 
 class NavBar extends React.Component {
   constructor(props) {

@@ -1,0 +1,31 @@
+@mixin logo {
+  .logo {
+    font-size: 44px;
+    font-family: "Nimbus Sans D OT Light";
+    font-weight: 300;
+    color: #463020;
+
+    .ultra-thin {
+      font-family: "Nimbus Sans D OT Ultra Light";
+      font-weight: 100;
+    }
+  }
+}
+
+@mixin navbar {
+  @include logo;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  background-color: #f4f1ea;
+  align-items: center;
+  z-index: 10000;
+
+  top: 0;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

@@ -32,33 +32,6 @@ ul {
   list-style-type: none;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  background-color: #984b43;
-  align-items: center;
-  z-index: 10000;
-  // border-bottom: 5px solid black;
-  position: fixed;
-  top: 0;
-
-  a {
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  .logo {
-    font-size: 44px;
-    font-family: "Nimbus Sans D OT Light";
-
-    .ultra-thin {
-      font-family: "Nimbus Sans D OT Ultra Light";
-    }
-  }
-}
-
 .carousel__slider-tray-wrapper.carousel__slider-tray-wrap--horizontal {
   min-width: 1000px;
 }

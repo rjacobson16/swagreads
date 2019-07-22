@@ -1,6 +1,6 @@
 import React from "react";
 import ReactHint from "react-hint";
-// import 'react-hint/css/index.css';
+import "./sessions.scss";
 
 class SessionPage extends React.Component {
   constructor(props) {

@@ -1,9 +1,9 @@
-import { connect } from 'react-redux';
-import { logout, login, signup } from '../actions/session_actions';
+import { connect } from "react-redux";
+import { logout, login, signup } from "../../actions/session_actions";
 
-import SessionPage from './session_page';
+import SessionPage from "./session_page";
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   errors: state.errors.session
 });
 

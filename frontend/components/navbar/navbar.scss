@@ -1,0 +1,5 @@
+@import "../../util/util.scss";
+
+.navbar {
+  @include navbar;
+}
