@@ -1,9 +1,7 @@
 import React from "react";
 import { Switch } from "react-router-dom";
 
-import BookshelfIndexContainer from "./bookshelves/bookshelf_index_container";
-import BookshelfShowContainer from "./bookshelves/bookshelf_show_container";
-import BookIndexContainer from "./home_page/home_page_container";
+import HomePageContainer from "./home_page/home_page_container";
 import SessionPageContainer from "./session_page/session_page_container";
 import BookShowContainer from "./books/book_show_container";
 import NavBarContainer from "./navbar/navbar_container";
@@ -15,8 +13,8 @@ const App = () => (
     <NavBarContainer />
     <Switch>
       <AuthRoute exact path="/" component={SessionPageContainer} />
-      <ProtectedRoute exact path="/books" component={BookIndexContainer} />
-      <ProtectedRoute
+      <ProtectedRoute exact path="/home" component={HomePageContainer} />
+      {/* <ProtectedRoute
         exact
         path="/bookshelves/"
         component={BookshelfIndexContainer}
@@ -30,7 +28,7 @@ const App = () => (
         exact
         path="/bookshelves/:bookshelfId"
         component={BookshelfShowContainer}
-      />
+      /> */}
     </Switch>
   </div>
 );

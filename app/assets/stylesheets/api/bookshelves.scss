@@ -1,73 +1,67 @@
-// Place all the styles related to the Api::Bookshelves controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// // Place all the styles related to the Api::Bookshelves controller here.
+// // They will automatically be included in application.css.
+// // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.slider-button {
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 10px;
+// .slider-button {
+//   margin: auto;
+//   margin-top: 30px;
+//   margin-bottom: 10px;
+// }
+// .shelf-title {
+//   margin-left: 2em;
+// }
 
-}
-.shelf-title{
-  margin-left: 2em;
-}
+// .material-icons {
+//   font-size: 24px;
+// }
 
-.material-icons {
-  font-size: 24px;
+// .add-bookshelf {
+//   margin-left: 48%;
+//   display: flex;
+//   align-items: center;
+// }
 
-}
+// .add-bookshelf:hover {
+//   color: #006633;
+//   cursor: pointer;
+// }
 
+// .slider-button-container {
+//   justify-content: center;
+//   display: flex;
+// }
 
-.add-bookshelf{
-    margin-left: 48%;
-    display: flex;
-    align-items: center;
-}
+// .bookshelf-index {
+//   padding-top: 100px;
+//   font-family: "PT Serif", serif;
+// }
 
-.add-bookshelf:hover{
-  color: #006633;
-  cursor: pointer;
-}
+// .bookshelf-index > h2 {
+//   margin-left: 15px;
+// }
 
-.slider-button-container {
-  justify-content: center;
-  display: flex;
-}
+// .bookshelf-show-container {
+//   margin-top: 120px;
+// }
 
-.bookshelf-index {
-  padding-top: 100px;
-  font-family: 'PT Serif', serif;
-}
+// .shelf_item {
+// }
 
-.bookshelf-index > h2 {
-  margin-left: 15px;
-}
+// .shelf_item:hover img {
+//   opacity: 0.5;
+// }
 
-.bookshelf-show-container {
-  margin-top: 120px;
-}
+// .shelf_item:hover button {
+//   display: block;
+// }
 
-.shelf_item{
+// .shelf_item button {
+//   display: none;
+//   position: absolute;
+//   top: 10%;
+//   left: 0;
+// }
 
-}
-
-.shelf_item:hover img{
-    opacity:0.5;
-
-}
-
-.shelf_item:hover button{
-display: block;
-
-}
-
-.shelf_item button{
-    display: none;
-    position: absolute;
-    top: 10%;
-    left: 0;
-}
-
-.delete_from_shelf {
-  background: none;
-}
+// .delete_from_shelf {
+//   background: none;
+// }

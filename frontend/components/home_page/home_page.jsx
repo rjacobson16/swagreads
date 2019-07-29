@@ -1,7 +1,7 @@
 import React from "react";
 import ShelfControls from "./shelf_controls/shelf_controls";
-console.log(ShelfControls);
-// import BookIndexItem from "./book_index_item";
+import BookList from "./book_list/book_list";
+import "./home_page.scss";
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -23,23 +23,26 @@ class HomePage extends React.Component {
     });
   }
 
+  // getActiveShelf() {
+  //   return
+  // }
+
   render() {
+    console.log("home Page Props", this.props);
     // eslint-disable-next-line no-debugger
     // debugger;
     let allShelves = [
       ...this.props.bookshelves,
-      { name: "all", books: this.books }
+      { name: "all", books: this.allBooks }
     ];
     return (
-      <div>
+      <section className="home-page-container">
         <ShelfControls
           selectedShelf={this.state.activeShelf}
           bookshelves={allShelves}
         />
-        <ul className="book-index">
-          {/* {this.props.books.map(book => console.log(book))} */}
-        </ul>
-      </div>
+        <BookList books={this.props.allBooks} />
+      </section>
     );
   }
 }
