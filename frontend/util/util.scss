@@ -14,7 +14,7 @@
 
 @mixin navbar {
   @include logo;
-  height: 84px;
+  min-height: 84px;
   display: flex;
   justify-content: space-between;
   max-width: 100%;
