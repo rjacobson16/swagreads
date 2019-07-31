@@ -1,3 +1,11 @@
-.bookshelf-controls {
-  background: lime;
+.shelf-content-container {
+  display: flex;
+  justify-content: flex-start;
+  background: lightblue;
+  padding: 0 10%;
+
+  .bookshelf-controls {
+    background: lime;
+    height: 600px;
+  }
 }

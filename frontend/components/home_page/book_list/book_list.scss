@@ -1,4 +1,9 @@
-.book_index_item {
+.book-list {
+  width: 100%;
+}
+
+.book-index-item {
+  position: relative;
   min-height: 200px;
   display: flex;
   border-radius: 2px;
@@ -17,7 +22,7 @@
   max-width: 30%;
   height: 200px;
   position: absolute;
-  right: 20px;
+  right: 250px;
   margin-left: 18px;
   overflow: scroll;
   text-align: left;

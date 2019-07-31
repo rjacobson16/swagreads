@@ -1,5 +1,15 @@
 .home-page-container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  height: auto;
+  overflow-y: auto;
+
+  padding: 20px 0 40px;
   background: pink;
-  overflow: auto;
+
+  .home-page-nav {
+    display: flex;
+    padding: 0 10%;
+  }
 }

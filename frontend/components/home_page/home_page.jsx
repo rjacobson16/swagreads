@@ -36,13 +36,18 @@ class HomePage extends React.Component {
       { name: "all", books: this.allBooks }
     ];
     return (
-      <section className="home-page-container">
-        <ShelfControls
-          selectedShelf={this.state.activeShelf}
-          bookshelves={allShelves}
-        />
-        <BookList books={this.props.allBooks} />
-      </section>
+      <main className="home-page-container">
+        <nav className="home-page-nav">
+          <h2>My Books</h2>
+        </nav>
+        <section className="shelf-content-container">
+          <ShelfControls
+            selectedShelf={this.state.activeShelf}
+            bookshelves={allShelves}
+          />
+          <BookList books={this.props.allBooks} />
+        </section>
+      </main>
     );
   }
 }

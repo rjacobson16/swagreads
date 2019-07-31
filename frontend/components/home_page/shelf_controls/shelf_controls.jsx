@@ -3,7 +3,6 @@ import "./shelf_controls.scss";
 
 const ShelfControls = props => (
   <aside className="bookshelf-controls">
-    <h2>My Books</h2>
     <h4>Bookshelves</h4>
     {props.bookshelves.map(shelf => (
       <p

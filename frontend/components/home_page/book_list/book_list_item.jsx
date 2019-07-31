@@ -4,7 +4,7 @@ const BookIndexItem = ({ book }) => {
   let image_url = book.image_url;
 
   return (
-    <li className="book_index_item">
+    <li className="book-index-item">
       {image_url ? <img src={image_url} className="book_cover" /> : null}
       <div className="book_info">
         <div className="book_data">
