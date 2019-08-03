@@ -1,12 +1,14 @@
 import { connect } from "react-redux";
 import { fetchAllBooks } from "../../actions/book_actions";
 import { fetchAllBookshelves } from "../../actions/bookshelf_actions";
+import { fetchEveryUserReviews } from "../../actions/review_actions";
 import HomePage from "./home_page";
 
 const mapStateToProps = state => ({
-  allBooks: Object.keys(state.entities.books).map(
-    id => state.entities.books[id]
-  ),
+  allReviews: state.entities.reviews,
+  allBooks: Object.keys(state.entities.books).map(id => {
+    return { ...state.entities.books[id], allUserReviews: [] };
+  }),
   bookshelves: Object.keys(state.entities.bookshelves).map(
     id => state.entities.bookshelves[id]
   )
