@@ -15,6 +15,7 @@ class HomePage extends React.Component {
   componentDidMount() {
     this.props.fetchAllBooks();
     this.props.fetchAllBookshelves();
+    this.props.fetchEveryUserReviews();
   }
 
   setActiveShelf(shelfName) {
