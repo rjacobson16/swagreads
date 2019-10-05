@@ -62,3 +62,7 @@ export default withRouter(BookshelfIndexItem);
 * Book recommendations: an engine which generates book recommendations for each user based on their book ratings and the book ratings of similar users.
 
 * Fix - usernames on comments: edit the review index item so that the username attached to the review's author_id is displayed.
+
+-- Oct 2019 --
+
+Redo entire frontend lmao what the hell
