@@ -14,11 +14,10 @@
 
 @mixin navbar {
   @include logo;
-  min-height: 84px;
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   max-width: 100%;
-  background-color: #f4f1ea;
   align-items: center;
   z-index: 10000;
 
@@ -35,11 +34,10 @@
     margin-left: 8px;
     font-size: 14px;
     font-weight: normal;
-    padding: 8px 12px;
     background-color: #382110;
     border: 1px solid #382110;
     color: white;
-    height: auto;
+    border-radius: 3px;
 
     &:hover {
       background-color: #58371f;

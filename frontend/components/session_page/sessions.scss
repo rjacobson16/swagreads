@@ -15,6 +15,9 @@
 
 .session-page-container {
   // width: 100%;
+  background-image: url("/assets/masthead_background.jpg");
+  background-repeat: repeat-x;
+  background-position-x: center;
   height: 100vh;
   input {
     border: none;
@@ -52,6 +55,10 @@
       padding: 5px;
       font-size: 13px;
       margin-left: 8px;
+    }
+
+    button {
+      height: 32px;
     }
   }
 
@@ -113,11 +120,11 @@
 
     button {
       margin: 8px 0;
-      padding: 10px 0;
       background-color: #382110;
       border: 1px solid #382110;
+      background-color: lime;
       color: white;
-      height: auto;
+      height: 32px;
 
       &:hover {
         background-color: #58371f;
@@ -127,7 +134,6 @@
 }
 
 .signup-form-container {
-  background: linear-gradient(135deg, #e3ad89 10%, #f4bf93 60%, #0788a9);
   max-width: 100%;
   height: 295px;
   padding: 0 400px;
@@ -137,8 +143,6 @@
     float: right;
     width: 300px;
     height: 100%;
-    background-color: #f4f1ea;
-    border-top: 1px solid #d8d8d8;
     box-sizing: border-box;
     padding: 8px;
 
@@ -158,35 +162,21 @@
       display: block;
       margin: 8px 0;
       font-size: 16px;
-      font-weight: lighter;
     }
 
     button {
-      padding: 8px 12px;
       border: 0px;
-      border-radius: 4px;
+      border-radius: 3px;
       background-color: #fdd05f;
       font-size: 18px;
       line-height: 22px;
-      height: auto;
+      height: 38px;
       // margin-left: 0;
 
       &:hover {
         background-color: #ffd56d;
       }
     }
-  }
-
-  :after {
-    content: "";
-    background-image: url("/assets/bibliophile.svg");
-    background-size: 400px 295px;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 295px;
-    position: absolute;
-    top: 0;
-    left: 380px;
   }
 }
 
@@ -212,20 +202,16 @@
 
 @media (max-width: 1500px) {
   .login-form-container {
-    padding: 20px 300px;
+    padding: 0px 240px;
   }
   .signup-form-container {
-    padding: 0px 300px;
-
-    :after {
-      left: 280px;
-    }
+    padding: 0px 240px;
   }
 }
 
 @media (max-width: 1290px) {
   .login-form-container {
-    padding: 20px 120px;
+    padding: 0px 120px;
   }
 
   .signup-form-container {
@@ -238,7 +224,7 @@
 }
 @media screen and (max-width: 945px) {
   .login-form-container {
-    padding: 20px 50px;
+    padding: 0px 50px;
   }
 
   .signup-form-container {
@@ -252,7 +238,7 @@
 
 @media (max-width: 768px) {
   .login-form-container {
-    padding: 20px;
+    padding: 0px 20px;
     align-items: center;
 
     .mobile-login-btn {

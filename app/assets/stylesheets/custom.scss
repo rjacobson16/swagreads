@@ -8,7 +8,10 @@
   src: url("/assets/Nimbus-Sans-D-OT-Ultra-Light_32757.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+}
 
 html {
   position: fixed;
@@ -30,12 +33,16 @@ body {
   background-color: white;
   font-family: "Lato", sans-serif;
 
+  button {
+    font-family: "Lato", sans-serif;
+  }
+
   ul {
     list-style-type: none;
   }
 
   button {
-    padding: 4px 10px;
+    padding: 0px 12px;
     border-radius: 5px;
     font-size: 12pt;
     height: 30px;
